@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace KinematicCharacterController.Examples
 {
-    public class ExampleCharacterCamera : MonoBehaviour
+    public class MainCamera : MonoBehaviour
     {
         [Header("Framing")]
         public Camera Camera;
@@ -88,33 +88,10 @@ namespace KinematicCharacterController.Examples
             _currentFollowPosition = FollowTransform.position;
         }
 
-        public void UpdateWithInput(float deltaTime, float zoomInput, Vector3 rotationInput)
+        public void UpdateWithInput(float deltaTime, float zoomInput)
         {
             if (FollowTransform)
             {
-                if (InvertX)
-                {
-                    rotationInput.x *= -1f;
-                }
-                if (InvertY)
-                {
-                    rotationInput.y *= -1f;
-                }
-
-                // Process rotation input
-                Quaternion rotationFromInput = Quaternion.Euler(FollowTransform.up * (rotationInput.x * RotationSpeed));
-                PlanarDirection = rotationFromInput * PlanarDirection;
-                PlanarDirection = Vector3.Cross(FollowTransform.up, Vector3.Cross(PlanarDirection, FollowTransform.up));
-                Quaternion planarRot = Quaternion.LookRotation(PlanarDirection, FollowTransform.up);
-
-                _targetVerticalAngle -= (rotationInput.y * RotationSpeed);
-                _targetVerticalAngle = Mathf.Clamp(_targetVerticalAngle, MinVerticalAngle, MaxVerticalAngle);
-                Quaternion verticalRot = Quaternion.Euler(_targetVerticalAngle, 0, 0);
-                Quaternion targetRotation = Quaternion.Slerp(Transform.rotation, planarRot * verticalRot, 1f - Mathf.Exp(-RotationSharpness * deltaTime));
-
-                // Apply rotation
-                Transform.rotation = targetRotation;
-
                 // Process distance input
                 if (_distanceIsObstructed && Mathf.Abs(zoomInput) > 0f)
                 {
@@ -172,7 +149,7 @@ namespace KinematicCharacterController.Examples
                 }
 
                 // Find the smoothed camera orbit position
-                Vector3 targetPosition = _currentFollowPosition - ((targetRotation * Vector3.forward) * _currentDistance);
+                Vector3 targetPosition = _currentFollowPosition - ((Vector3.forward) * _currentDistance);
 
                 // Handle framing
                 targetPosition += Transform.right * FollowPointFraming.x;

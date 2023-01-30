@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using KinematicCharacterController;
-using System;
+
+/* Controls the movement of the character being played */
 
 namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
 {
@@ -16,11 +14,12 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
     public class PlayerCharacterController : MonoBehaviour, ICharacterController
     {
         public KinematicCharacterMotor Motor;
+        public Transform MeshRoot;
 
         [Header("Stable Movement")]
         public float MaxStableMoveSpeed = 10f;
 
-        public float StableMovementSharpness = 15;
+        public float StableMovementSharpness = 15; // Higher values mean movement can change more abruptly
         public float OrientationSharpness = 10;
 
         [Header("Air Movement")]
@@ -33,7 +32,6 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public bool RotationObstruction;
 
         public Vector3 Gravity = new Vector3(0, -30f, 0);
-        public Transform MeshRoot;
 
         private Vector3 _moveInputVector;
         private Vector3 _lookInputVector;
@@ -150,10 +148,12 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
             return true;
         }
 
+        // Called whenever on the ground
         public void OnGroundHit(Collider hitCollider, Vector3 hitNormal, Vector3 hitPoint, ref HitStabilityReport hitStabilityReport)
         {
         }
 
+        // Called when hitting a wall infront/behind/to the side while moving
         public void OnMovementHit(Collider hitCollider, Vector3 hitNormal, Vector3 hitPoint, ref HitStabilityReport hitStabilityReport)
         {
         }
@@ -172,6 +172,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
 
         public void OnDiscreteCollisionDetected(Collider hitCollider)
         {
+            Debug.Log("Player Character Controller: Discrete Collision Detected");
         }
     }
 }
