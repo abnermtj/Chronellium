@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/*
+Attach this as a component to make a sprite always face the player
+ */
+
 public class SpriteBillboard : MonoBehaviour
 {
     // Start is called before the first frame update

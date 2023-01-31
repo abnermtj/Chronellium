@@ -1,6 +1,6 @@
 using UnityEngine;
 
-/* Controls the movement of the character being played */
+/* Controls the movement and animation of the character being played */
 
 namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
 {
@@ -15,6 +15,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
     {
         public KinematicCharacterMotor Motor;
         public Transform MeshRoot;
+        public GameObject PlayerSprite;
 
         [Header("Stable Movement")]
         public float MaxStableMoveSpeed = 10f;
@@ -48,7 +49,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
             // Clamp input
-            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
+            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
 
             // Calculate camera direction and rotation on the character plane
             Vector3 cameraPlanarDirection = Vector3.ProjectOnPlane(inputs.CameraRotation * Vector3.forward, Motor.CharacterUp).normalized;
@@ -141,6 +142,23 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         /// </summary>
         public void AfterCharacterUpdate(float deltaTime)
         {
+            if (Motor.Velocity.x == 0) // NOT MOVING
+            {
+                Debug.Log("STOP");
+                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", false);
+            }
+            else if (Mathf.Sign(Motor.Velocity.x) == 1) // Moving to the right
+            {
+                Debug.Log("RIGHT");
+                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
+                PlayerSprite.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                Debug.Log("LEFT");
+                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
+                PlayerSprite.GetComponent<SpriteRenderer>().flipX = true;
+            }
         }
 
         public bool IsColliderValidForCollisions(Collider coll)
