@@ -14,6 +14,7 @@ public class SpriteBillboard : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.rotation = Quaternion.Euler(0f, Camera.main.transform.rotation.eulerAngles.y, 0f);
+        transform.rotation = Quaternion.Euler(Camera.main.transform.eulerAngles.x, Camera.main.transform.rotation.eulerAngles.y, 0f);
+        Debug.Log(Camera.main.transform.rotation);
     }
 }
