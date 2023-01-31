@@ -1,0 +1,6 @@
+First install URP latest version and insert the custom renderer supplied in "Assets\ARTnGAME\VolumeFogSRP\URP Custom Renderer\Settings" 
+in the Edit -> Project Settings -> Graphics -> Scriptable renderer pipeline settings slot.
+
+Add the script "ConnectSunToVolumeFogURP" to the camera and set the Directional Light if the scene in the "Sun" slot of the script.
+
+Tweak the effect using the script on the camera.

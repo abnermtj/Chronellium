@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2164003194267531513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0be45b36e8e16542a7790a1760c76a8, type: 3}
+  m_Name: NewBlitSunShaftsSRP
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    Event: 550
+    blitMaterial: {fileID: 2100000, guid: fe82eb0cad9d4ac4a95aad39c295f2cf, type: 2}
+    blitMaterialPassIndex: -1
+    destination: 0
+    textureId: _BlitPassTexture
+    blend: 0.5
+    resolution: 1
+    screenBlendMode: 0
+    sunTransform: {x: 0, y: 0, z: 0}
+    radialBlurIterations: 2
+    sunColor: {r: 1, g: 1, b: 1, a: 1}
+    sunThreshold: {r: 0.87, g: 0.74, b: 0.65, a: 1}
+    sunShaftBlurRadius: 2.5
+    sunShaftIntensity: 1.15
+    maxRadius: 0.75
+    useDepthTexture: 1
+--- !u!114 &-957729821740068991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d225a4cad17704386835b918c7b8ec, type: 3}
+  m_Name: NewBlitVolumeFogSRP
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    isForReflections: 0
+    blendVolumeLighting: 0
+    _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    noiseTexture: {fileID: 2800000, guid: 41e8b07bd5f650642a234c5a20002c64, type: 3}
+    _startDistance: 30
+    _fogHeight: 0.75
+    _fogDensity: 1
+    _cameraRoll: 0
+    _cameraDiff: {x: 0, y: 0, z: 0, w: 0}
+    _cameraTiltSign: 1
+    heightDensity: 1
+    noiseDensity: 1
+    noiseScale: 1
+    noiseThickness: 1
+    noiseSpeed: {x: 1, y: 1, z: 1}
+    occlusionDrop: 1
+    occlusionExp: 1
+    noise3D: 1
+    startDistance: 1
+    luminance: 1
+    lumFac: 1
+    ScatterFac: 1
+    TurbFac: 1
+    HorizFac: 1
+    turbidity: 1
+    reileigh: 1
+    mieCoefficient: 1
+    mieDirectionalG: 1
+    bias: 1
+    contrast: 1
+    TintColor: {r: 1, g: 1, b: 1, a: 1}
+    TintColorK: {x: 0, y: 0, z: 0}
+    TintColorL: {x: 0, y: 0, z: 0}
+    Sun: {x: 0, y: 0, z: 0, w: 0}
+    FogSky: 1
+    ClearSkyFac: 1
+    PointL: {x: 0, y: 0, z: 0, w: 0}
+    PointLParams: {x: 0, y: 0, z: 0, w: 0}
+    _useRadialDistance: 0
+    _fadeToSkybox: 1
+    inheritFromController: 1
+    enableFog: 1
+    Event: 400
+    blitMaterial: {fileID: 2100000, guid: a8568e1a8beabd648ac8c844140e2163, type: 2}
+    blitMaterialPassIndex: -1
+    destination: 0
+    textureId: _BlitPassTexture
+    blend: 0.5
+    resolution: 1
+    screenBlendMode: 0
+    sunTransform: {x: 0, y: 0, z: 0}
+    radialBlurIterations: 2
+    sunColor: {r: 1, g: 1, b: 1, a: 1}
+    sunThreshold: {r: 0.87, g: 0.74, b: 0.65, a: 1}
+    sunShaftBlurRadius: 2.5
+    sunShaftIntensity: 1.15
+    maxRadius: 0.75
+    useDepthTexture: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: ForwardRenderer 3
+  m_EditorClassIdentifier: 
+  m_RendererFeatures:
+  - {fileID: -957729821740068991}
+  m_RendererFeatureMap: 818f6228cd75b5f2
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    screenSpaceShadowPS: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd,
+      type: 3}
+    samplingPS: {fileID: 4800000, guid: 04c410c9937594faa893a11dceb85f7e, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 0
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+--- !u!114 &404941126417819739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb0d144d79adfe4a9342c48894aae7e, type: 3}
+  m_Name: NewBlitVolumeCloudsSRP
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    noiseTexture: {fileID: 0}
+    _startDistance: 30
+    _fogHeight: 0.75
+    _fogDensity: 1
+    _cameraRoll: 0
+    _cameraDiff: {x: 0, y: 0, z: 0, w: 0}
+    _cameraTiltSign: 1
+    heightDensity: 1
+    noiseDensity: 1
+    noiseScale: 1
+    noiseThickness: 1
+    noiseSpeed: {x: 1, y: 1, z: 1}
+    occlusionDrop: 1
+    occlusionExp: 1
+    noise3D: 1
+    startDistance: 1
+    luminance: 1
+    lumFac: 1
+    ScatterFac: 1
+    TurbFac: 1
+    HorizFac: 1
+    turbidity: 1
+    reileigh: 1
+    mieCoefficient: 1
+    mieDirectionalG: 1
+    bias: 1
+    contrast: 1
+    TintColor: {r: 1, g: 1, b: 1, a: 1}
+    TintColorK: {x: 0, y: 0, z: 0}
+    TintColorL: {x: 0, y: 0, z: 0}
+    Sun: {x: 0, y: 0, z: 0, w: 0}
+    FogSky: 0
+    ClearSkyFac: -0.95
+    PointL: {x: 0, y: 0, z: 0, w: 0}
+    PointLParams: {x: 0, y: 0, z: 0, w: 0}
+    _useRadialDistance: 0
+    _fadeToSkybox: 1
+    inheritFromController: 1
+    enableFog: 0
+    Event: 400
+    blitMaterial: {fileID: 2100000, guid: dc99879b441ad1a45b0b1d8512a1745f, type: 2}
+    blitMaterialPassIndex: -1
+    destination: 0
+    textureId: _BlitPassTexture
+    blend: 0.5
+    resolution: 1
+    screenBlendMode: 0
+    sunTransform: {x: 0, y: 0, z: 0}
+    radialBlurIterations: 2
+    sunColor: {r: 1, g: 1, b: 1, a: 1}
+    sunThreshold: {r: 0.87, g: 0.74, b: 0.65, a: 1}
+    sunShaftBlurRadius: 2.5
+    sunShaftIntensity: 1.15
+    maxRadius: 0.75
+    useDepthTexture: 1
+    isForReflections: 1
