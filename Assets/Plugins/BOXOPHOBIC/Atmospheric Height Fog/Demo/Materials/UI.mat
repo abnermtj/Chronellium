@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: UI
   m_Shader: {fileID: 4800000, guid: d2c008f025f10e84e840af15703382d8, type: 3}
-  m_ShaderKeywords: AHF_ENABLED_OFF
+  m_ShaderKeywords: AHF_ENABLED_OFF ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -64,21 +64,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AdvancedCat: 1
     - _BumpScale: 1
     - _ColorMask: 15
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DirectionalCat: 1
     - _DstBlend: 0
     - _Float6: 0.5
+    - _FogAxisMode: 1
+    - _FogCat: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _NoiseCat: 1
     - _NoiseIntensity: 0.01
     - _NoiseScale: 0.5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SkyboxCat: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
