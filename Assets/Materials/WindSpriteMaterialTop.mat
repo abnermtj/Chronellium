@@ -142,7 +142,8 @@ Material:
     - _WindFlutterPeriodScale: 0.823
     - _WindFlutterPhase: 21.2
     - _WindFlutterScale: 0.026
-    - _WindIntensity: 0.2
+    - _WindFreq: 1
+    - _WindIntensity: 0.1
     - _WindRangeLvl0: 1.5
     - _WindRangeLvl1: 0.6
     - _WindRangeLvlB: 0.4
