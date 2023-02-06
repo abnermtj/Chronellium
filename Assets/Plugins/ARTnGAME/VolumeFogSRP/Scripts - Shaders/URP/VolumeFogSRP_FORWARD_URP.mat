@@ -136,7 +136,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _invertX: 0
-    - _visibleLightsCount: 2
+    - _visibleLightsCount: 4
     - blendVolumeLighting: 0.01
     - depthDilation: 1
     - lightCount: 3
