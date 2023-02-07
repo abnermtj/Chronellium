@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class InputNode : Pipe
 {
-    [SerializeField] private VirusBase specifiedInput;
+    [SerializeField] public VirusBase SpecifiedInput { get; set; }
 
     public override LayeredVirus GetOutput() {
         return input;
     }
 
     public override void SetInput() {
-        input = new LayeredVirus(specifiedInput);
-        parentPipe = null;
+        input = new LayeredVirus(SpecifiedInput);
+        ParentPipe = null;
+    }
+
+    public void CreateInput(VirusBase baseVirus) {
+        SpecifiedInput = baseVirus;
+        SetInput();
     }
 }

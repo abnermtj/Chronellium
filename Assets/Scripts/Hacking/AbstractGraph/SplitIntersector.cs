@@ -9,7 +9,7 @@ public class SplitIntersector : Pipe
     private LayeredVirus stepOutput;
     private bool hasSplitted = false;
     [SerializeField] private int splitCount;
-    [SerializeField] private Pipe stepChildPipe;
+    [SerializeField] public Pipe StepChildPipe { get; set; }
 
     public override LayeredVirus GetOutput() {
         // Defensive
@@ -18,11 +18,13 @@ public class SplitIntersector : Pipe
     }
     
     public LayeredVirus GetStepOutput() {
+        if (hasSplitted) return stepOutput;
         hasSplitted = true;
-        return input.PeelOff(splitCount);
+        stepOutput = input.Split(splitCount);
+        return stepOutput;
     }
 
     public override void SetInput() {
-        input = parentPipe.GetOutput();
+        input = ParentPipe.GetOutput();
     }
 }

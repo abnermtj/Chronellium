@@ -1,7 +1,7 @@
 // MergeIntersectors have two main inputs and one output
 public class MergeIntersector : Pipe
 {
-    private Pipe stepParentPipe;
+    public Pipe StepParentPipe { get; set; }
     private LayeredVirus stepInput;
 
     public override LayeredVirus GetOutput() {
@@ -9,7 +9,7 @@ public class MergeIntersector : Pipe
     }
 
     public override void SetInput() {
-        input = parentPipe.GetOutput();
-        stepInput = stepParentPipe.GetOutput();
+        input = ParentPipe.GetOutput();
+        stepInput = StepParentPipe.GetOutput();
     }
 }

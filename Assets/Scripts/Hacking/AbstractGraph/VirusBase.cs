@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+[CreateAssetMenu(menuName="VirusBase")]
 // NOTE: Building block for layered viruses
-public class VirusBase : MonoBehaviour
-{
+public class VirusBase : ScriptableObject
+{   
     [SerializeField] private Type type;
+    // Each mesh should be scaled to be bounded 1x1x1 box for layering;
+    public GameObject visual;
+
     public enum Type {
         TROJAN_HORSE,
         FILE_INFECTOR,

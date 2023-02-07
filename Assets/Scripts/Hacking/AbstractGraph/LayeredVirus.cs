@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.Events;
 
 public class LayeredVirus
 {
-    private Stack<VirusBase> layers;
+    public UnityEvent<VirusBase> onLayerAdded;
+    public UnityEvent onLayerRemoved;
+    public Stack<VirusBase> Layers { get; private set; }
 
     public LayeredVirus() {
-        layers = new Stack<VirusBase>(); 
+        Layers = new Stack<VirusBase>(); 
     }
 
     public LayeredVirus(VirusBase core) {
-        layers = new Stack<VirusBase>();
+        Layers = new Stack<VirusBase>();
         AddLayer(core);
     }
 
@@ -23,7 +25,11 @@ public class LayeredVirus
         return this;
     }
 
-    public LayeredVirus PeelOff(int numOfLayers) {
+    public LayeredVirus Split(int numOfLayers) {
+        if (numOfLayers == 0 || isEmpty()) {
+            return null;
+        }
+
         LayeredVirus splitVirus = new LayeredVirus();
         while (!isEmpty() && numOfLayers > 0) {
             splitVirus.AddLayer(PopLayer());
@@ -31,20 +37,33 @@ public class LayeredVirus
 
         return splitVirus;
     }
+
+    public void Peel(int numOfLayers) {
+        while (!isEmpty() && numOfLayers > 0) {
+            PopLayer();
+        }
+    }
     
-    public void AddLayer(VirusBase newLayer) {
-        layers.Push(newLayer);
+    void AddLayer(VirusBase newLayer) {
+        Layers.Push(newLayer);
+        onLayerAdded?.Invoke(newLayer);
     }
 
-    public VirusBase PopLayer() {
-        return layers.Pop();
+    VirusBase PopLayer() {
+        VirusBase poppedLayer = Layers.Pop();
+        if (!isEmpty()) onLayerRemoved?.Invoke();
+        return poppedLayer;
     }
 
     public VirusBase PeekLayer() {
-        return layers.Peek();
+        return Layers.Peek();
     }
 
     public bool isEmpty() {
-        return layers.Count == 0;
+        return Layers.Count == 0;
+    }
+
+    public int numOfLayers() {
+        return Layers.Count;
     }
 }
