@@ -14,11 +14,13 @@ public class SplitIntersectorView : PipeView
     [SerializeField] private GameObject layeredVirusPrefab;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private PipeView sideDownstream;
+    [SerializeField] private int splitCount;
     private SplitIntersector splitIntersector;
  
     void Awake() {
         splitIntersector.ParentPipe = upstream.GetPipe();
         splitIntersector.StepChildPipe = sideDownstream.GetPipe();
+        splitIntersector.SplitCount = splitCount;
         if (!(upstream is PurePipeView) || !(downstream is PurePipeView) || !(sideDownstream is PurePipeView)) Debug.LogError("Pipes connected to split intersector must be pure pipes");
     }
 
@@ -32,7 +34,7 @@ public class SplitIntersectorView : PipeView
         while (timeElaped < timeFrame) {
             float lerpedSpeed = startPointSpeed - startPointSpeed * (timeElaped / timeFrame);
             // content.transform.position += (transform.position - start).normalized * lerpedSpeed * Time.fixedDeltaTime;
-            content.transform.position += transform.TransformPoint(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
@@ -54,7 +56,7 @@ public class SplitIntersectorView : PipeView
         // From midpoint to endpoint
         while (timeElaped < timeFrame) {
             float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformPoint(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
@@ -71,7 +73,7 @@ public class SplitIntersectorView : PipeView
         // From midpoint to endpoint
         while (timeElaped < timeFrame) {
             float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformPoint(Vector3.down) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.down) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }

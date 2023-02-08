@@ -29,7 +29,7 @@ public class StraightPipeView : PurePipeView
         while (timeElaped < timeFrame) {
             float lerpedSpeed = startPointSpeed + (streamSpeed - startPointSpeed) * (timeElaped / timeFrame);
             // content.transform.position += vectorToRotate.normalized * lerpedSpeed * Time.fixedDeltaTime;
-            content.transform.position += transform.TransformPoint(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
@@ -43,7 +43,7 @@ public class StraightPipeView : PurePipeView
         while (timeElaped < timeFrame) {
             float lerpedSpeed = streamSpeed + (endPointSpeed - streamSpeed) * (timeElaped / timeFrame);
             // content.transform.position += vectorToRotate.normalized * lerpedSpeed * Time.fixedDeltaTime;
-            content.transform.position += transform.TransformPoint(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }

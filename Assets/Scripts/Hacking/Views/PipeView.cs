@@ -6,8 +6,8 @@ using UnityEngine;
 // NOTE: Designer's responsibility to align all the pipes.
 public abstract class PipeView : MonoBehaviour
 {
-    protected PipeView upstream;
-    protected PipeView downstream;
+    [SerializeField] protected PipeView upstream;
+    [SerializeField] protected PipeView downstream;
 
     public void CallMoveStream(GameObject content) {
         AbsorbFromUpstream();

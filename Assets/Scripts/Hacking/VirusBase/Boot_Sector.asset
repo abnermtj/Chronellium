@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
   m_Name: Boot_Sector
   m_EditorClassIdentifier: 
-  type: 0
-  visual: {fileID: 0}
+  type: 2
+  visual: {fileID: 5427701648532218799, guid: d8dcc368b917741179a5cdadaaee8067, type: 3}

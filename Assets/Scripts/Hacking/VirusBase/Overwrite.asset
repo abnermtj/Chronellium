@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
   m_Name: Overwrite
   m_EditorClassIdentifier: 
-  type: 0
-  visual: {fileID: 0}
+  type: 3
+  visual: {fileID: 1059814526708794555, guid: 94000b1a0ed2040babf3819eaeb5817d, type: 3}

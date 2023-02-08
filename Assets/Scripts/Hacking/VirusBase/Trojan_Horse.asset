@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
-  m_Name: Trojan_Horse 1
+  m_Name: Trojan_Horse
   m_EditorClassIdentifier: 
   type: 0
-  visual: {fileID: 0}
+  visual: {fileID: 7603359311016206508, guid: 02f143121922f4b4cb82c187836cedc5, type: 3}

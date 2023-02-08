@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
   m_Name: File_Infector
   m_EditorClassIdentifier: 
-  type: 0
-  visual: {fileID: 0}
+  type: 1
+  visual: {fileID: 8034152707564613275, guid: d2b6b7af512ae4667b84e9225ca5fe39, type: 3}

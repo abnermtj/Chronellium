@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
   m_Name: Injection
   m_EditorClassIdentifier: 
-  type: 0
-  visual: {fileID: 0}
+  type: 4
+  visual: {fileID: 8028326732052433890, guid: cf824d63f63a2472a96024a23668dd8e, type: 3}
