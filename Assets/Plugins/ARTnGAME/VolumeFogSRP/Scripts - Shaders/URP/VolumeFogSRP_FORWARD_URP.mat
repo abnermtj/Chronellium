@@ -152,7 +152,7 @@ Material:
     - _ScatteringTint: {r: 0.6981132, g: 0.6735695, b: 0.6553044, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SunColor: {r: 1.15, g: 1.15, b: 1.15, a: 1.15}
-    - _SunPosition: {r: 1.126261, g: 8.734891, b: 14.009186, a: 0.75}
+    - _SunPosition: {r: 0.72931963, g: 0.5, b: 12.191521, a: 0.75}
     - _SunThreshold: {r: 0.87, g: 0.74, b: 0.65, a: 1}
     - _stepsControl: {r: 0, g: 0, b: 1, a: 1}
     - lightControlA: {r: 0.92, g: 0.3, b: 1, a: 1}

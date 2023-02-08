@@ -140,6 +140,41 @@ MonoBehaviour:
     sunShaftIntensity: 1.15
     maxRadius: 0.75
     useDepthTexture: 1
+--- !u!114 &-1321922404186276689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a108e5185fc44aa8a6f37f53d6464a, type: 3}
+  m_Name: SunShaftFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    passEvent: 550
+    sunShaftMaterial: {fileID: 0}
+    opacity: 1
+    resolution: 2
+    blendMode: 0
+    sunPosition: {x: 0, y: 0, z: 10}
+    radialBlurIterations: 2
+    sunColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    sunThreshold:
+      r: 0.87
+      g: 0.74
+      b: 0.65
+      a: 1
+    sunBlurRadius: 2.5
+    sunIntensity: 1.15
+    maxRadius: 0.75
+    useDepthTexture: 1
 --- !u!114 &-957729821740068991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +268,8 @@ MonoBehaviour:
   - {fileID: -957729821740068991}
   - {fileID: -6462271525762890478}
   - {fileID: -8721772313899157539}
-  m_RendererFeatureMap: 818f6228cd75b5f21205c830496651a6dd37345a4a0af686
+  - {fileID: 0}
+  m_RendererFeatureMap: 818f6228cd75b5f21205c830496651a6dd37345a4a0af686afbcd8c59396a7ed
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
