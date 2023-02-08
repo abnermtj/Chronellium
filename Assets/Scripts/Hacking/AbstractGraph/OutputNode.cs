@@ -7,17 +7,17 @@ public class OutputNode : Pipe
 {
     [SerializeField] public VirusBase Target { get; set; }
     // Consequences of destroying the node registers their listener here
-    public UnityEvent onDestroyed;
+    public UnityEvent onDestroyed = new UnityEvent();
 
     public override void SetInput() {
         input = ParentPipe.GetOutput();
     }
 
     public override LayeredVirus GetOutput() {
-        return ProcessOutput(input);
+        return ProcessInput(input);
     }
 
-    public LayeredVirus ProcessOutput(LayeredVirus output) {
+    public LayeredVirus ProcessInput(LayeredVirus output) {
         if (Target == output.PeekLayer()) {
             onDestroyed?.Invoke();
             output.Peel(1);

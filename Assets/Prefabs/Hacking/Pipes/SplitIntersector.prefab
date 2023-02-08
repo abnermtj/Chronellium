@@ -92,7 +92,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3569358754906921160}
-  - component: {fileID: 4639255727737372904}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -115,21 +114,6 @@ Transform:
   m_Father: {fileID: 3646406528281587659}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4639255727737372904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288284525074905468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e59db69bfa84f589270f3d2a12f3a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaledInterval: {x: 0.25, y: 0.25, z: 0.25}
-  coreScale: {x: 0.5, y: 0.5, z: 0.5}
-  outerMostScale: {x: 0, y: 0, z: 0}
 --- !u!1 &4048068067661451590
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +421,7 @@ MonoBehaviour:
   layeredVirusPrefab: {fileID: 5159169229482265315, guid: fba3ba222ac9e4437abc7c69f72135a1, type: 3}
   spawnPoint: {fileID: 3569358754906921160}
   sideDownstream: {fileID: 0}
+  splitCount: 0
 --- !u!1 &7301484071796677996
 GameObject:
   m_ObjectHideFlags: 0

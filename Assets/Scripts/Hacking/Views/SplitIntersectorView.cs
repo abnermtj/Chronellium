@@ -15,7 +15,8 @@ public class SplitIntersectorView : PipeView
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private PipeView sideDownstream;
     [SerializeField] private int splitCount;
-    private SplitIntersector splitIntersector;
+    private SplitIntersector splitIntersector = new SplitIntersector();
+    public LayeredVirus SplittedVirus { get; private set; }
  
     void Awake() {
         splitIntersector.ParentPipe = upstream.GetPipe();
@@ -39,12 +40,12 @@ public class SplitIntersectorView : PipeView
             yield return new WaitForFixedUpdate();
         }
 
-        LayeredVirus splittedVirusLogic = splitIntersector.GetStepOutput();
-        GameObject splittedVirus = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
-        splittedVirus.GetComponent<VirusView>()?.InitVirus(splittedVirusLogic);
+        SplittedVirus = splitIntersector.GetStepOutput();
+        GameObject splittedVirusObject = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
+        splittedVirusObject.GetComponent<VirusView>()?.InitVirus(SplittedVirus);
 
         StartCoroutine(MoveMainDownstream(content));
-        StartCoroutine(MoveSideDownstream(splittedVirus));
+        StartCoroutine(MoveSideDownstream(splittedVirusObject));
     }
 
     IEnumerator MoveMainDownstream(GameObject content) {
@@ -68,12 +69,12 @@ public class SplitIntersectorView : PipeView
         float timeElaped = 0;
         float endPointSpeed = sideDownstream.GetStreamSpeed() / 2;
         float avgSpeed = endPointSpeed / 2;
-        float timeFrame = transform.localScale.y / 2 / avgSpeed;
+        float timeFrame = Mathf.Abs(transform.localScale.y) / 2 / avgSpeed;
 
         // From midpoint to endpoint
         while (timeElaped < timeFrame) {
             float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.down) * lerpedSpeed * Time.fixedDeltaTime;
+            content.transform.position += transform.TransformDirection(Vector3.down * Mathf.Sign(transform.localScale.y)) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }

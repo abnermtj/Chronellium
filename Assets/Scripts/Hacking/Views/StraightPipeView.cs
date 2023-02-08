@@ -16,10 +16,6 @@ public class StraightPipeView : PurePipeView
 
     // TODO: Substitute all custom directional vectors
     protected override IEnumerator MoveStream(GameObject content) {
-        Vector3 start = content.transform.position;
-        // Vector3 vectorToRotate = unitEndPoint * transform.localScale.x;
-        // vectorToRotate = transform.rotation * vectorToRotate;
-
         float startPointSpeed = upstream.isSplitIntersector() ? streamSpeed : (streamSpeed + upstream.GetStreamSpeed()) / 2;
         float timeElaped = 0;
         float firstHalfAvgSpeed = (startPointSpeed + streamSpeed) / 2;
@@ -28,7 +24,6 @@ public class StraightPipeView : PurePipeView
         // From startpoint to midpoint
         while (timeElaped < timeFrame) {
             float lerpedSpeed = startPointSpeed + (streamSpeed - startPointSpeed) * (timeElaped / timeFrame);
-            // content.transform.position += vectorToRotate.normalized * lerpedSpeed * Time.fixedDeltaTime;
             content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
@@ -42,17 +37,16 @@ public class StraightPipeView : PurePipeView
         // From midpoint to endpoint
         while (timeElaped < timeFrame) {
             float lerpedSpeed = streamSpeed + (endPointSpeed - streamSpeed) * (timeElaped / timeFrame);
-            // content.transform.position += vectorToRotate.normalized * lerpedSpeed * Time.fixedDeltaTime;
             content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
             timeElaped += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
 
-        if (isMain) {
+        if (providesMainInput) {
             downstream.CallMoveStream(content);
         } else {
             if (!(downstream is MergeIntersectorView)) {
-                Debug.LogError("isMain can only be false when attached to merge intersector");
+                Debug.LogError("providesMainInput can only be false when attached to merge intersector");
             } else {
                 ((MergeIntersectorView)downstream).CallMoveSidestream(content);
             }

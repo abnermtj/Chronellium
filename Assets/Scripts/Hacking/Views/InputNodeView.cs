@@ -8,17 +8,41 @@ public class InputNodeView : PipeView
     private InputNode inputNode = new InputNode();
     [SerializeField] private GameObject layeredVirusPrefab;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private VirusBase selectedInput = null;
+    [SerializeField] private VirusBaseMenu menu;
 
     void Awake() {
         upstream = null;
     }
 
-    public void SetInput(VirusBase baseVirus) {
-        inputNode.CreateInput(baseVirus);
+    void OnEnable() {
+        menu.onChoiceChanged += ChangeSelectedInput;
+    }
+
+    void OnDisable() {
+        menu.onChoiceChanged -= ChangeSelectedInput;
+    }
+
+    void OnMouseDown() {
+        menu.gameObject.SetActive(true);
+    }
+
+    bool HasInput() { return selectedInput != null; }
+
+    public void ChangeSelectedInput(VirusBase selectedVirus) {
+        selectedInput = selectedVirus;
+    }
+
+    void SetInput() {
+        inputNode.CreateInput(selectedInput);
     }
 
     public void StartStreamWithInput() {
+        if (!HasInput()) selectedInput = menu.allVirusBases[0];
+        Debug.Log($"Starting stream at {name}");
+        SetInput();
         GameObject simpleVirus = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
+        Debug.Log($"Input core is {inputNode.GetOutput().PeekLayer()}");
         simpleVirus.GetComponent<VirusView>()?.InitVirus(inputNode.GetOutput());
         CallMoveStream(simpleVirus);
     }

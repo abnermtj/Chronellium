@@ -22,6 +22,7 @@ public class VirusView : MonoBehaviour
 
     public void InitVirus(LayeredVirus virusLogic) {
         layeredVirus = virusLogic;
+        Debug.Log("Initing layeredVirus");
         layeredVirus.onLayerAdded.AddListener(AddLayer);
         layeredVirus.onLayerRemoved.AddListener(RemoveLayer);
         

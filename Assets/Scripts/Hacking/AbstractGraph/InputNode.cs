@@ -12,6 +12,7 @@ public class InputNode : Pipe
 
     public override void SetInput() {
         input = new LayeredVirus(SpecifiedInput);
+        Debug.Log($"Specified input in input node is {input.PeekLayer()}");
         ParentPipe = null;
     }
 

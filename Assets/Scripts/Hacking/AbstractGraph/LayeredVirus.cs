@@ -4,8 +4,8 @@ using UnityEngine.Events;
 
 public class LayeredVirus
 {
-    public UnityEvent<VirusBase> onLayerAdded;
-    public UnityEvent onLayerRemoved;
+    public UnityEvent<VirusBase> onLayerAdded = new UnityEvent<VirusBase>();
+    public UnityEvent onLayerRemoved = new UnityEvent();
     public Stack<VirusBase> Layers { get; private set; }
 
     public LayeredVirus() {

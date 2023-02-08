@@ -52,11 +52,11 @@ public class CurvePipeView : PurePipeView
             yield return new WaitForFixedUpdate();
         }
 
-        if (isMain) {
+        if (providesMainInput) {
             downstream.CallMoveStream(content);
         } else {
-            if (!(downstream is MergeIntersectorView)) {
-                Debug.LogError("isMain can only be false when attached to merge intersector");
+            if (downstream.GetComponent<MergeIntersectorView>() == null) {
+                Debug.LogError("providesMainInput can only be false when attached to merge intersector");
             } else {
                 ((MergeIntersectorView)downstream).CallMoveSidestream(content);
             }
