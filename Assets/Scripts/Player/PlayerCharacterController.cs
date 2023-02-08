@@ -144,20 +144,17 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         {
             if (Motor.Velocity.x == 0) // NOT MOVING
             {
-                Debug.Log("STOP");
-                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", false);
+                //PlayerSprite.GetComponent<Animator>().SetBool("isMoving", false);
             }
             else if (Mathf.Sign(Motor.Velocity.x) == 1) // Moving to the right
             {
-                Debug.Log("RIGHT");
                 PlayerSprite.GetComponent<SpriteRenderer>().flipX = true;
-                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
+                //PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
             }
             else
             {
-                Debug.Log("LEFT");
                 PlayerSprite.GetComponent<SpriteRenderer>().flipX = false;
-                PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
+                //PlayerSprite.GetComponent<Animator>().SetBool("isMoving", true);
             }
         }
 
