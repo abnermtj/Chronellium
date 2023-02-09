@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteAffectedByFog
+  m_Name: SpriteAffectedByFog 1
   m_Shader: {fileID: -6465566751694194690, guid: f5dc5e301ebdc314aa7c26b34fa94dda,
     type: 3}
   m_ValidKeywords: []
