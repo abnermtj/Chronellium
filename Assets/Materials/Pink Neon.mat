@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: White
+  m_Name: Pink Neon
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
   m_ValidKeywords:
   - _ALPHATEST_ON
@@ -125,8 +125,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
-    - _Color: {r: 0.07547168, g: 0.07547168, b: 0.07547168, a: 1}
-    - _EmissionColor: {r: 1.2836353, g: 4.642936, b: 5.2164755, a: 1}
+    - _BaseColor: {r: 0.990566, g: 0.85506403, b: 0.85506403, a: 1}
+    - _Color: {r: 0.99056596, g: 0.85506403, b: 0.85506403, a: 1}
+    - _EmissionColor: {r: 4.791444, g: 0.20341025, b: 4.0126805, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
