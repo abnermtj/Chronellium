@@ -15,7 +15,7 @@ public abstract class PurePipeView : PipeView
             basicPipe.SetInput();
         } else {
             if (upstream.GetComponent<SplitIntersectorView>() == null) {
-                Debug.Log("@field providesMainOutput can only be marked false when connected to split intersector");
+                Debug.LogError("@field providesMainOutput can only be marked false when connected to split intersector");
             } else {
                 basicPipe.SetSpecialInput(upstream.GetComponent<SplitIntersectorView>().SplittedVirus);
             }

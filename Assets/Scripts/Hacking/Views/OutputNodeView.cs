@@ -5,9 +5,10 @@ using UnityEngine;
 public class OutputNodeView : PipeView
 {
     [SerializeField] private VirusBase target;
-    private OutputNode outputNode = new OutputNode();
+    private OutputNode outputNode;
 
     void Awake() {
+        outputNode = new OutputNode(target);
         outputNode.ParentPipe = upstream.GetPipe();
         downstream = null;
     }

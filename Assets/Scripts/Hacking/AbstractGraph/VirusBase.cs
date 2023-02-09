@@ -10,6 +10,7 @@ public class VirusBase : ScriptableObject
     [SerializeField] private Type type;
     // Each mesh should be scaled to be bounded 1x1x1 box for layering;
     public GameObject visual;
+    public Color color;
 
     public enum Type {
         TROJAN_HORSE,

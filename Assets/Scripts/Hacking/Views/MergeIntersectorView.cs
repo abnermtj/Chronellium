@@ -20,6 +20,7 @@ public class MergeIntersectorView : PipeView
     [SerializeField] private bool mainVirusWaiting = false;
     [SerializeField] private bool sideVirusWaiting = false;
     [SerializeField] private GameObject coreContent;
+    [SerializeField] private GameObject sideContent;
 
     void Awake() {
         mergeIntersector.ParentPipe = upstream.GetPipe();
@@ -52,10 +53,13 @@ public class MergeIntersectorView : PipeView
         mainVirusWaiting = true;
         if (sideVirusWaiting) {
             mergeIntersector.GetOutput();
+            Destroy(sideContent);
             StartCoroutine(MoveDownstream());
         }
     }
     IEnumerator MoveSidestream(GameObject content) {
+        sideContent = content;
+
         float startPointSpeed = sideUpstream.GetStreamSpeed() / 2;
         float timeElapsed = 0;
         float avgSpeed = startPointSpeed / 2;
@@ -65,7 +69,12 @@ public class MergeIntersectorView : PipeView
         // From startpoint to midpoint
         while (timeElapsed < timeFrame) {
             float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
-            content.transform.position = transform.TransformPoint(new Vector3(0, -transform.localScale.y / 2 + startPointSpeed * timeElapsed + distOffset, 0) * Mathf.Sign(transform.localScale.y));
+            if (Mathf.Sign(transform.localScale.y) == 1) {
+                content.transform.position = transform.TransformPoint(new Vector3(0, -transform.localScale.y / 2 + startPointSpeed * timeElapsed + distOffset, 0));
+            } else {
+                content.transform.position = transform.TransformPoint(new Vector3(0, -transform.localScale.y / 2 + startPointSpeed * timeElapsed + distOffset + transform.localScale.y, 0));
+            }
+
             timeElapsed += Time.deltaTime;
             yield return null;
         }
@@ -73,7 +82,7 @@ public class MergeIntersectorView : PipeView
         sideVirusWaiting = true;
         if (mainVirusWaiting) {
             mergeIntersector.GetOutput();
-            Destroy(content);
+            Destroy(sideContent);
             StartCoroutine(MoveDownstream());
         }
     }
@@ -99,14 +108,14 @@ public class MergeIntersectorView : PipeView
     }
 
     public void CallMoveSidestream(GameObject content) {
-        Debug.Log($"Moving {content.name} in side stream");
+        // Debug.Log($"Moving {content.name} in side stream");
         AbsorbFromUpstream();
         StartCoroutine(MoveSidestream(content));
     } 
 
     // Caveat need wait for 
     protected override void AbsorbFromUpstream() {
-        Debug.Log($"Intersector absorbfrom called");
+        // Debug.Log($"Intersector absorbfrom called");
         virusArrivalCount += 1;
         if (ComponentsReady()){
             mergeIntersector.SetInput();
@@ -114,7 +123,7 @@ public class MergeIntersectorView : PipeView
         }
     }
 
-    // Whether both viruses have entered the bounds of the merge intersector
+    // Whether both viruses have entered the bounds of the intersector
     bool ComponentsReady() {
         return virusArrivalCount == 2;
     }

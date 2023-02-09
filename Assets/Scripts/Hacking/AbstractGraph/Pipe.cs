@@ -7,6 +7,7 @@ public abstract class Pipe
     public Pipe ParentPipe { get; set; } 
     public Pipe ChildPipe { get; set; }
     protected LayeredVirus input;
+    protected LayeredVirus output;
 
     public abstract LayeredVirus GetOutput();
     public abstract void SetInput();

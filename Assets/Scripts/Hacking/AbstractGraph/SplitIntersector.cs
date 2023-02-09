@@ -12,15 +12,18 @@ public class SplitIntersector : Pipe
     [SerializeField] public Pipe StepChildPipe { get; set; }
 
     public override LayeredVirus GetOutput() {
+        if (output != null) return output;
         // Defensive
-        if (!hasSplitted) GetStepOutput();
-        return input;
+        GetStepOutput();
+        return output;
     }
     
     public LayeredVirus GetStepOutput() {
         if (hasSplitted) return stepOutput;
         hasSplitted = true;
         stepOutput = input.Split(SplitCount);
+        output = input;
+        Debug.Log($"Step output is {stepOutput}");
         return stepOutput;
     }
 

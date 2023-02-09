@@ -5,7 +5,9 @@ public class BasicPipe : Pipe
     }
     
     public override LayeredVirus GetOutput() {
-        return input;
+        if (output != null) return output;
+        output = input;
+        return output;
     }
     
     public void SetSpecialInput(LayeredVirus specifiedInput) {

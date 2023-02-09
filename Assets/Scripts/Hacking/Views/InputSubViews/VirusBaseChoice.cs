@@ -7,6 +7,7 @@ public class VirusBaseChoice : MonoBehaviour
 {
     public VirusBase virusChoice;
     public TextMeshProUGUI virusText;
+    public Image colorIndicator;
     public Button button;
     public Action<VirusBase> onChoiceSelected;
 

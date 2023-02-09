@@ -5,7 +5,9 @@ public class MergeIntersector : Pipe
     private LayeredVirus stepInput;
 
     public override LayeredVirus GetOutput() {
-        return input.WrapWith(stepInput);
+        if (output != null) return output;
+        output = input.WrapWith(stepInput);
+        return output;
     }
 
     public override void SetInput() {

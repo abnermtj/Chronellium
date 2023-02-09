@@ -39,10 +39,9 @@ public class InputNodeView : PipeView
 
     public void StartStreamWithInput() {
         if (!HasInput()) selectedInput = menu.allVirusBases[0];
-        Debug.Log($"Starting stream at {name}");
+        // Debug.Log($"Starting stream at {name}");
         SetInput();
         GameObject simpleVirus = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
-        Debug.Log($"Input core is {inputNode.GetOutput().PeekLayer()}");
         simpleVirus.GetComponent<VirusView>()?.InitVirus(inputNode.GetOutput());
         CallMoveStream(simpleVirus);
     }

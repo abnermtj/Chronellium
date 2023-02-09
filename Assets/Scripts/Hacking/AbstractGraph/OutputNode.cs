@@ -5,21 +5,28 @@ using UnityEngine.Events;
 
 public class OutputNode : Pipe
 {
-    [SerializeField] public VirusBase Target { get; set; }
+    [SerializeField] private VirusBase target;
     // Consequences of destroying the node registers their listener here
     public UnityEvent onDestroyed = new UnityEvent();
+
+    public OutputNode(VirusBase target) {
+        this.target = target;
+    }
 
     public override void SetInput() {
         input = ParentPipe.GetOutput();
     }
 
     public override LayeredVirus GetOutput() {
-        return ProcessInput(input);
+        if (output != null) return output;
+        output = ProcessInput(input);
+        return output;
     }
 
     public LayeredVirus ProcessInput(LayeredVirus output) {
-        if (Target == output.PeekLayer()) {
+        if (target == output.PeekLayer()) {
             onDestroyed?.Invoke();
+            Debug.Log($"{target} matched output node destroyed");
             output.Peel(1);
         }
   

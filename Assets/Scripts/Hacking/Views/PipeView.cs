@@ -10,7 +10,7 @@ public abstract class PipeView : MonoBehaviour
     [SerializeField] protected PipeView downstream;
 
     public void CallMoveStream(GameObject content) {
-        Debug.Log($"Moving {content.name} in main stream of {name}");
+        // Debug.Log($"Moving {content.name} in main stream of {name}");
         AbsorbFromUpstream();
         StartCoroutine(MoveStream(content));
     }

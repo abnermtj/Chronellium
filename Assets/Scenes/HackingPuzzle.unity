@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1677979215}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (12)
@@ -477,6 +481,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 694104152}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: providesMainInput
       value: 0
       objectReference: {fileID: 0}
@@ -631,6 +639,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 873381661}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: absorbsMainOutput
       value: 0
@@ -850,6 +862,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1201099765}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (5)
@@ -1236,6 +1252,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 2131671935}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (18)
@@ -1983,6 +2003,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1045044636}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (16)
@@ -2088,6 +2112,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2131671935}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: providesMainInput
       value: 0
       objectReference: {fileID: 0}
@@ -2173,6 +2201,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1311802120}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: absorbsMainOutput
       value: 0
       objectReference: {fileID: 0}
@@ -2257,6 +2289,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1650218138}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (2)
@@ -2338,6 +2374,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 411923551}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (3)
@@ -2412,6 +2452,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1201099765}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: providesMainInput
       value: 0
@@ -2632,6 +2676,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1910914731}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: absorbsMainOutput
       value: 0
@@ -2873,6 +2921,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 1005533797}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (9)
@@ -3325,7 +3377,11 @@ PrefabInstance:
     - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: downstream
       value: 
-      objectReference: {fileID: 1910914731}
+      objectReference: {fileID: 992723233}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (17)
@@ -3410,6 +3466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 476138773564029938, guid: 0edbf12e6787d4b73b0f99f666d28b7c, type: 3}
+      propertyPath: downstream
+      value: 
+      objectReference: {fileID: 2043298811}
     - target: {fileID: 476138773564029939, guid: 0edbf12e6787d4b73b0f99f666d28b7c, type: 3}
       propertyPath: m_Name
       value: InputNode (1)
@@ -3491,6 +3551,10 @@ PrefabInstance:
       propertyPath: downstream
       value: 
       objectReference: {fileID: 694104152}
+    - target: {fileID: 5706319133736824609, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
+      propertyPath: streamSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8905572031081415305, guid: f4b546d5522544f6995fe4b26b71a2dc, type: 3}
       propertyPath: m_Name
       value: StraightPipe (1)

@@ -76,7 +76,7 @@ public class SplitIntersectorView : PipeView
         // From midpoint to endpoint
         while (timeElapsed < timeFrame) {
             float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
-            content.transform.position = transform.TransformPoint(new Vector3(0, -distOffset, 0) * Mathf.Sign(transform.localScale.y));
+            content.transform.position = transform.TransformPoint(new Vector3(0, -distOffset, 0));
             timeElapsed += Time.deltaTime;
             yield return null;
         }

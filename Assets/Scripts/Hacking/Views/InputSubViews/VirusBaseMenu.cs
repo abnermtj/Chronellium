@@ -12,6 +12,7 @@ public class VirusBaseMenu : MonoBehaviour
     void Awake() {
         for (int i = 0; i < allVirusBases.Length; i++) {
             virusBaseChoices[i].virusChoice = allVirusBases[i];
+            virusBaseChoices[i].colorIndicator.color = allVirusBases[i].color;
         }
     }
 

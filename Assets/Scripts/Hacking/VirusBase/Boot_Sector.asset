@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   visual: {fileID: 5427701648532218799, guid: d8dcc368b917741179a5cdadaaee8067, type: 3}
+  color: {r: 0.2088165, g: 0.9811321, b: 0, a: 1}

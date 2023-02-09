@@ -12,9 +12,10 @@ public class OptionalOutputNodeView : PipeView
     [SerializeField] private Vector3 unitIntersectPoint = Vector3.zero;
     [SerializeField] private VirusBase target;
     [SerializeField] private bool providesMainInput = true;
-    private OutputNode outputNode = new OutputNode();
+    private OutputNode outputNode;
 
     void Awake() {
+        outputNode = new OutputNode(target);
         outputNode.ParentPipe = upstream.GetPipe();
     }
 

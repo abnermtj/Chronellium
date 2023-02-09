@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Events;
+using System.Text;
 
 public class LayeredVirus
 {
@@ -33,6 +34,7 @@ public class LayeredVirus
         LayeredVirus splitVirus = new LayeredVirus();
         while (!isEmpty() && numOfLayers > 0) {
             splitVirus.AddLayer(PopLayer());
+            numOfLayers -= 1;
         }
 
         return splitVirus;
@@ -65,5 +67,13 @@ public class LayeredVirus
 
     public int numOfLayers() {
         return Layers.Count;
+    }
+
+    public override string ToString() {
+        StringBuilder sb = new StringBuilder($"from outermost layer inward {Layers.Count} layers:\n");
+        foreach (VirusBase layer in Layers) {
+            sb.AppendLine(layer.ToString());
+        }
+        return sb.ToString();
     }
 }

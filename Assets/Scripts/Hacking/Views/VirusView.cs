@@ -22,15 +22,16 @@ public class VirusView : MonoBehaviour
 
     public void InitVirus(LayeredVirus virusLogic) {
         layeredVirus = virusLogic;
-        Debug.Log("Initing layeredVirus");
+        // Debug.Log("Initing layeredVirus");
         layeredVirus.onLayerAdded.AddListener(AddLayer);
         layeredVirus.onLayerRemoved.AddListener(RemoveLayer);
         
         outerMostScale = scaledInterval * (layeredVirus.numOfLayers() - 1) + coreScale;
-        Vector3 currScale = outerMostScale;
-        foreach (VirusBase layer in layeredVirus.Layers) {
+        Vector3 currScale = Vector3.one;
+        Stack<VirusBase> reversedLayers = new Stack<VirusBase>(layeredVirus.Layers.ToArray());
+        foreach (VirusBase layer in reversedLayers) {
             CreateLayer(currScale, layer.visual);
-            currScale -= scaledInterval;
+            currScale += scaledInterval;
         }
     }
 

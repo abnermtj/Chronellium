@@ -7,12 +7,14 @@ public class InputNode : Pipe
     [SerializeField] public VirusBase SpecifiedInput { get; set; }
 
     public override LayeredVirus GetOutput() {
-        return input;
+        if (output != null) return output;
+        output = input;
+        return output;
     }
 
     public override void SetInput() {
         input = new LayeredVirus(SpecifiedInput);
-        Debug.Log($"Specified input in input node is {input.PeekLayer()}");
+        // Debug.Log($"Specified input in input node is {input.PeekLayer()}");
         ParentPipe = null;
     }
 
