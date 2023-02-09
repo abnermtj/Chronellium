@@ -17,39 +17,36 @@ public class CurvePipeView : PurePipeView
     protected override IEnumerator MoveStream(GameObject content) {
         // X and Y should be scaled simultaneously
         float radius = transform.localScale.x;
-        // In radians
-        Vector3 upstreamAngularSpeed = new Vector3(0f, 0f, upstream.GetStreamSpeed() / radius);
-        Vector3 currStreamAngularSpeed = new Vector3(0f, 0f, streamSpeed / radius);
-        Vector3 downstreamAngularSpeed = new Vector3(0f, 0f, downstream.GetStreamSpeed() / radius);
+        // In radians z axis
+        float upstreamAngularSpeed = upstream.GetStreamSpeed() / radius;
+        float currStreamAngularSpeed = streamSpeed / radius;
+        float downstreamAngularSpeed = downstream.GetStreamSpeed() / radius;
 
         float timeElapsed = 0;
-        Vector3 startPointAngularSpeed = upstream.isSplitIntersector() ? currStreamAngularSpeed : (upstreamAngularSpeed + currStreamAngularSpeed) / 2;
-        Vector3 firstHalfAvgAngularSpeed = (startPointAngularSpeed + currStreamAngularSpeed) / 2;
-        float timeFrame = Mathf.PI / 4 / firstHalfAvgAngularSpeed.z;
-        Vector3 angleTravelled = Vector3.zero;
+        float startPointAngularSpeed = upstream.isSplitIntersector() ? currStreamAngularSpeed : (upstreamAngularSpeed + currStreamAngularSpeed) / 2;
+        float firstHalfAvgAngularSpeed = (startPointAngularSpeed + currStreamAngularSpeed) / 2;
+        float timeFrame = Mathf.PI / 4 / firstHalfAvgAngularSpeed;
+        float leftoverAngle = Mathf.PI / 4 - startPointAngularSpeed * timeFrame;
 
         // Assumes content enters centered on the curve bounds
         while (timeElapsed < timeFrame) {
-            Vector3 lerpedAngularSpeed = startPointAngularSpeed + (currStreamAngularSpeed - startPointAngularSpeed) * (timeElapsed / timeFrame);
-            angleTravelled += lerpedAngularSpeed * Time.fixedDeltaTime;
-            Vector3 currAngle = transform.rotation.eulerAngles + angleTravelled;
-            content.transform.position = transform.position + Quaternion.Euler(currAngle.x, currAngle.y, currAngle.z) * unitStartPoint * radius;
-            timeElapsed += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
+            float angleOffset = VectorUtils.SquareLerpFloat(0, leftoverAngle, timeElapsed / timeFrame);
+            content.transform.position = transform.position + Quaternion.Euler(0, 0, Mathf.Rad2Deg * (startPointAngularSpeed * timeElapsed + angleOffset)) * Vector3.right * transform.localScale.x;
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
 
         timeElapsed = 0;
-        Vector3 endPointAngularSpeed = downstream.isSplitIntersector() ? currStreamAngularSpeed : (currStreamAngularSpeed + downstreamAngularSpeed) / 2;
-        Vector3 secondHalfAvgAngularSpeed = (currStreamAngularSpeed + endPointAngularSpeed) / 2;
-        timeFrame = Mathf.PI / 4 / secondHalfAvgAngularSpeed.z;
+        float endPointAngularSpeed = downstream.isSplitIntersector() ? currStreamAngularSpeed : (currStreamAngularSpeed + downstreamAngularSpeed) / 2;
+        float secondHalfAvgAngularSpeed = (currStreamAngularSpeed + endPointAngularSpeed) / 2;
+        timeFrame = Mathf.PI / 4 / secondHalfAvgAngularSpeed;
+        leftoverAngle = Mathf.PI / 4 - currStreamAngularSpeed * timeFrame;
 
         while (timeElapsed < timeFrame) {
-            Vector3 lerpedAngularSpeed = currStreamAngularSpeed + (endPointAngularSpeed - currStreamAngularSpeed) * (timeElapsed / timeFrame);
-            angleTravelled += lerpedAngularSpeed * Time.fixedDeltaTime;
-            Vector3 currAngle = transform.rotation.eulerAngles + angleTravelled;
-            content.transform.position = transform.position + Quaternion.Euler(currAngle.x, currAngle.y, currAngle.z) * unitStartPoint * radius;
-            timeElapsed += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
+            float angleOffset = VectorUtils.SquareLerpFloat(0, leftoverAngle, timeElapsed / timeFrame);
+            content.transform.position = transform.position + Quaternion.Euler(0, 0, Mathf.Rad2Deg * (currStreamAngularSpeed * timeElapsed + angleOffset + Mathf.PI / 4)) * Vector3.right * transform.localScale.x;
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
 
         if (providesMainInput) {

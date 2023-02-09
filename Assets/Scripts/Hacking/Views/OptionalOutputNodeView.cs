@@ -22,30 +22,30 @@ public class OptionalOutputNodeView : PipeView
 
     protected override IEnumerator MoveStream(GameObject content) {
         float startPointSpeed = upstream.GetStreamSpeed() / 2;
-        float timeElaped = 0;
+        float timeElapsed = 0;
         float firstHalfAvgSpeed = startPointSpeed / 2;
         float timeFrame = transform.localScale.x / 2 / firstHalfAvgSpeed;
 
         // From startpoint to midpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = startPointSpeed - startPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
+        while (timeElapsed < timeFrame) {
+            float lerpedSpeed = startPointSpeed - startPointSpeed * (timeElapsed / timeFrame);
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.deltaTime;
+            timeElapsed += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
 
         ProcessContent();
 
-        timeElaped = 0;
+        timeElapsed = 0;
         float endPointSpeed = downstream.GetStreamSpeed() / 2;
         float secondHalfAvgSpeed = endPointSpeed / 2;
         timeFrame = transform.localScale.x / 2 / secondHalfAvgSpeed;
 
         // From midpoint to endpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
+        while (timeElapsed < timeFrame) {
+            float lerpedSpeed = endPointSpeed * (timeElapsed / timeFrame);
+            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.deltaTime;
+            timeElapsed += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
 

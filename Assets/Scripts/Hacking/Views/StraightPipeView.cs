@@ -17,28 +17,30 @@ public class StraightPipeView : PurePipeView
     // TODO: Substitute all custom directional vectors
     protected override IEnumerator MoveStream(GameObject content) {
         float startPointSpeed = upstream.isSplitIntersector() ? streamSpeed : (streamSpeed + upstream.GetStreamSpeed()) / 2;
-        float timeElaped = 0;
+        float timeElapsed = 0;
         float firstHalfAvgSpeed = (startPointSpeed + streamSpeed) / 2;
         float timeFrame = transform.localScale.x / 2 / firstHalfAvgSpeed;
+        float leftoverDist = transform.localScale.x / 2 - startPointSpeed * timeFrame;
 
         // From startpoint to midpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = startPointSpeed + (streamSpeed - startPointSpeed) * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
+        while (timeElapsed < timeFrame) {
+            float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
+            content.transform.position = transform.TransformPoint(new Vector3(-transform.localScale.x / 2 + startPointSpeed * timeElapsed + distOffset, 0, 0));
+            timeElapsed += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
 
-        timeElaped = 0;
+        timeElapsed = 0;
         float endPointSpeed = downstream.isSplitIntersector() ? streamSpeed : (streamSpeed + downstream.GetStreamSpeed()) / 2;
         float secondHalfAvgSpeed = (streamSpeed + endPointSpeed) / 2;
         timeFrame = transform.localScale.x / 2 / secondHalfAvgSpeed;
+        leftoverDist = transform.localScale.x / 2 - streamSpeed * timeFrame;
 
         // From midpoint to endpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = streamSpeed + (endPointSpeed - streamSpeed) * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
+        while (timeElapsed < timeFrame) {
+            float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
+            content.transform.position = transform.TransformPoint(new Vector3(streamSpeed * timeElapsed + distOffset, 0, 0));
+            timeElapsed += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
 

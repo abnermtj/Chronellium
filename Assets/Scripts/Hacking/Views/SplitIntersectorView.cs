@@ -27,17 +27,17 @@ public class SplitIntersectorView : PipeView
 
     protected override IEnumerator MoveStream(GameObject content) {
         float startPointSpeed = upstream.GetStreamSpeed() / 2;
-        float timeElaped = 0;
+        float timeElapsed = 0;
         float avgSpeed = startPointSpeed / 2;
         float timeFrame = transform.localScale.x / 2 / avgSpeed;
+        float leftoverDist = transform.localScale.x / 2 - startPointSpeed * timeFrame;
 
         // From startpoint to midpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = startPointSpeed - startPointSpeed * (timeElaped / timeFrame);
-            // content.transform.position += (transform.position - start).normalized * lerpedSpeed * Time.fixedDeltaTime;
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
+        while (timeElapsed < timeFrame) {
+            float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
+            content.transform.position = transform.TransformPoint(new Vector3(-transform.localScale.x / 2 + startPointSpeed * timeElapsed + distOffset, 0, 0));
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
 
         SplittedVirus = splitIntersector.GetStepOutput();
@@ -49,34 +49,36 @@ public class SplitIntersectorView : PipeView
     }
 
     IEnumerator MoveMainDownstream(GameObject content) {
-        float timeElaped = 0;
+        float timeElapsed = 0;
         float endPointSpeed = downstream.GetStreamSpeed() / 2;
         float avgSpeed = endPointSpeed / 2;
         float timeFrame = transform.localScale.x / 2 / avgSpeed;
+        float leftoverDist = transform.localScale.x / 2;
 
         // From midpoint to endpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.right) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
+        while (timeElapsed < timeFrame) {
+            float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
+            content.transform.position = transform.TransformPoint(new Vector3(distOffset, 0, 0));
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
 
         downstream.CallMoveStream(content);
     }
 
     IEnumerator MoveSideDownstream(GameObject content) {
-        float timeElaped = 0;
+        float timeElapsed = 0;
         float endPointSpeed = sideDownstream.GetStreamSpeed() / 2;
         float avgSpeed = endPointSpeed / 2;
         float timeFrame = Mathf.Abs(transform.localScale.y) / 2 / avgSpeed;
+        float leftoverDist = Mathf.Abs(transform.localScale.y) / 2;
 
         // From midpoint to endpoint
-        while (timeElaped < timeFrame) {
-            float lerpedSpeed = endPointSpeed * (timeElaped / timeFrame);
-            content.transform.position += transform.TransformDirection(Vector3.down * Mathf.Sign(transform.localScale.y)) * lerpedSpeed * Time.fixedDeltaTime;
-            timeElaped += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
+        while (timeElapsed < timeFrame) {
+            float distOffset = VectorUtils.SquareLerpFloat(0, leftoverDist, timeElapsed / timeFrame);
+            content.transform.position = transform.TransformPoint(new Vector3(0, -distOffset, 0) * Mathf.Sign(transform.localScale.y));
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
 
         sideDownstream.CallMoveStream(content);
