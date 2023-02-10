@@ -17,10 +17,10 @@ public class OutputNode : Pipe
         input = ParentPipe.GetOutput();
     }
 
-    public override LayeredVirus GetOutput() {
-        if (output != null) return output;
+    // NOTE: Similar construct for all nodes to prevent the method from being called more than once. e.g. ProcessContent with output node and from the child pipe SetInput
+    public override void DetermineOutput() {
         output = ProcessInput(input);
-        return output;
+        Debug.Log($"{output} after processing");
     }
 
     public LayeredVirus ProcessInput(LayeredVirus output) {
@@ -28,6 +28,7 @@ public class OutputNode : Pipe
             onDestroyed?.Invoke();
             Debug.Log($"{target} matched output node destroyed");
             output.Peel(1);
+            HackGameManager.instance.CheckGameEnded(1);
         }
   
         return output;

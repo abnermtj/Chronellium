@@ -4,10 +4,8 @@ public class BasicPipe : Pipe
         input = ParentPipe.GetOutput();
     }
     
-    public override LayeredVirus GetOutput() {
-        if (output != null) return output;
+    public override void DetermineOutput() {
         output = input;
-        return output;
     }
     
     public void SetSpecialInput(LayeredVirus specifiedInput) {

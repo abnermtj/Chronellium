@@ -5,22 +5,18 @@ using UnityEngine;
 // These output nodes are attached directly on the layered virus's path. 
 // If outermost layer of the virus does not match the target, no unwrap will occur.
 // Std config, start point at (-0.5, 0) end point at (0.5, 1), process point at (0, 0)
-public class OptionalOutputNodeView : PipeView
+public class OptionalOutputNodeView : GeneralOutputView
 {
     [SerializeField] private Vector3 unitEndPoint = new Vector3(0.5f, 0f, 0f);
     [SerializeField] private Vector3 unitStartPoint = new Vector3(-0.5f, 0f, 0f);
     [SerializeField] private Vector3 unitIntersectPoint = Vector3.zero;
-    [SerializeField] private VirusBase target;
     [SerializeField] private bool providesMainInput = true;
-    private OutputNode outputNode;
 
     void Awake() {
         outputNode = new OutputNode(target);
         outputNode.ParentPipe = upstream.GetPipe();
     }
-
-    public override float GetStreamSpeed() { return 0; }
-
+    
     protected override IEnumerator MoveStream(GameObject content) {
         float startPointSpeed = upstream.GetStreamSpeed() / 2;
         float timeElapsed = 0;
@@ -61,12 +57,7 @@ public class OptionalOutputNodeView : PipeView
         }
     }
 
-    protected override void AbsorbFromUpstream() {
-        outputNode.SetInput();
-    }
-    public override Pipe GetPipe() { return outputNode; }
-
     void ProcessContent() {
-        outputNode.GetOutput();
+        outputNode.DetermineOutput();
     }
 }

@@ -9,6 +9,10 @@ public abstract class Pipe
     protected LayeredVirus input;
     protected LayeredVirus output;
 
-    public abstract LayeredVirus GetOutput();
+    public abstract void DetermineOutput();
+
+    public LayeredVirus GetOutput() {
+        return output;
+    }
     public abstract void SetInput();
 }

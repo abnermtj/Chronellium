@@ -3696,7 +3696,15 @@ MonoBehaviour:
   - {fileID: 2017000465}
   - {fileID: 957315670}
   - {fileID: 1107662298}
+  allOutputNodes:
+  - {fileID: 873381661}
+  - {fileID: 1677979215}
+  - {fileID: 1005533797}
+  - {fileID: 1311802120}
   gameCamera: {fileID: 1875102392}
+  gameInProgess: 0
+  endPointCount: 0
+  endPointReached: 0
 --- !u!4 &2137832141
 Transform:
   m_ObjectHideFlags: 0

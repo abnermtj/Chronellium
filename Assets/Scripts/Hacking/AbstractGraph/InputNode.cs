@@ -6,10 +6,8 @@ public class InputNode : Pipe
 {
     [SerializeField] public VirusBase SpecifiedInput { get; set; }
 
-    public override LayeredVirus GetOutput() {
-        if (output != null) return output;
+    public override void DetermineOutput() {
         output = input;
-        return output;
     }
 
     public override void SetInput() {
@@ -21,5 +19,11 @@ public class InputNode : Pipe
     public void CreateInput(VirusBase baseVirus) {
         SpecifiedInput = baseVirus;
         SetInput();
+    }
+
+    public void Clear() {
+        SpecifiedInput = null;
+        input = null;
+        output = null;
     }
 }

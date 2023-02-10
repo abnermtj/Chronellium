@@ -52,7 +52,7 @@ public class MergeIntersectorView : PipeView
 
         mainVirusWaiting = true;
         if (sideVirusWaiting) {
-            mergeIntersector.GetOutput();
+            mergeIntersector.DetermineOutput();
             Destroy(sideContent);
             StartCoroutine(MoveDownstream());
         }
@@ -81,7 +81,7 @@ public class MergeIntersectorView : PipeView
 
         sideVirusWaiting = true;
         if (mainVirusWaiting) {
-            mergeIntersector.GetOutput();
+            mergeIntersector.DetermineOutput();
             Destroy(sideContent);
             StartCoroutine(MoveDownstream());
         }

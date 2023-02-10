@@ -40,11 +40,17 @@ public class SplitIntersectorView : PipeView
             yield return null;
         }
 
+        splitIntersector.DetermineOutput();
         SplittedVirus = splitIntersector.GetStepOutput();
         GameObject splittedVirusObject = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
         splittedVirusObject.GetComponent<VirusView>()?.InitVirus(SplittedVirus);
+        
+        if (!content.GetComponent<VirusView>().isEmpty()) {
+            StartCoroutine(MoveMainDownstream(content));
+        } else {
+            Destroy(content);
+        }
 
-        StartCoroutine(MoveMainDownstream(content));
         StartCoroutine(MoveSideDownstream(splittedVirusObject));
     }
 

@@ -35,6 +35,10 @@ public class VirusView : MonoBehaviour
         }
     }
 
+    public int LayerCount() {
+        return layeredVirus.numOfLayers();
+    }
+
     void RemoveLayer() {
         GameObject outerLayer = layerVisuals.Pop();
         outerMostScale -= scaledInterval;
@@ -51,4 +55,8 @@ public class VirusView : MonoBehaviour
         layerVisuals.Push(createdLayer);
         createdLayer.transform.localScale = scale;
     } 
+
+    public bool isEmpty() {
+        return layeredVirus.isEmpty();
+    }
 }

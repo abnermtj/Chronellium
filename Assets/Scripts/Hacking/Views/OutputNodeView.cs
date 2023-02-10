@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutputNodeView : PipeView
+public class OutputNodeView : GeneralOutputView
 {
-    [SerializeField] private VirusBase target;
-    private OutputNode outputNode;
-
     void Awake() {
         outputNode = new OutputNode(target);
         outputNode.ParentPipe = upstream.GetPipe();
         downstream = null;
     }
-
-    public override float GetStreamSpeed() { return 0; }
 
     protected override IEnumerator MoveStream(GameObject content) {
         // Any animation logic here
@@ -21,13 +16,9 @@ public class OutputNodeView : PipeView
         EndStream(content);
     }
 
-    protected override void AbsorbFromUpstream() {
-        outputNode.SetInput();
-    }
-    public override Pipe GetPipe() { return outputNode; }
-
     void EndStream(GameObject content) {
-        outputNode.GetOutput();
+        outputNode.DetermineOutput();
         Destroy(content);
+        HackGameManager.instance.CheckGameEnded(content.GetComponent<VirusView>().LayerCount());
     }
 }

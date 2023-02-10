@@ -13,11 +13,14 @@ public abstract class PurePipeView : PipeView
     protected override void AbsorbFromUpstream() {
         if (absorbsMainOutput) {
             basicPipe.SetInput();
+            // Since no visual processing is done DetermineOutput() can be called here
+            basicPipe.DetermineOutput();
         } else {
             if (upstream.GetComponent<SplitIntersectorView>() == null) {
                 Debug.LogError("@field providesMainOutput can only be marked false when connected to split intersector");
             } else {
                 basicPipe.SetSpecialInput(upstream.GetComponent<SplitIntersectorView>().SplittedVirus);
+                basicPipe.DetermineOutput();
             }
         }
     }

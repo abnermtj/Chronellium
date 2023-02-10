@@ -43,6 +43,7 @@ public class LayeredVirus
     public void Peel(int numOfLayers) {
         while (!isEmpty() && numOfLayers > 0) {
             PopLayer();
+            numOfLayers -= 1;
         }
     }
     
