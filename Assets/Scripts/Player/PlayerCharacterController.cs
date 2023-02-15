@@ -52,7 +52,9 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
             // Clamp input
-            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
+            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, inputs.MoveAxisForward, 0f), 1f);
+            Debug.Log(moveInputVector);
+            //Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
 
             // Calculate camera direction and rotation on the character plane
             Vector3 cameraPlanarDirection = Vector3.ProjectOnPlane(inputs.CameraRotation * Vector3.forward, Motor.CharacterUp).normalized;
@@ -115,8 +117,14 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
                     Vector3 reorientedInput = Vector3.Cross(Motor.GroundingStatus.GroundNormal, inputRight).normalized * _moveInputVector.magnitude;
                     Quaternion orientation = walkPath.EvaluateOrientation(walkPath.FindClosestPoint(transform.position, 0, -1, 10));
                     targetMovementVelocity = orientation * inputRight * MaxStableMoveSpeed;
-                    Debug.Log(inputRight);
-                    //targetMovementVelocity = Camera.current.transform.localRotation * targetMovementVelocity;
+
+                    var goalPosition = walkPath.EvaluatePosition(walkPath.FindClosestPoint(transform.position, 0, -1, 10));
+                    var velocityToWalkPath = (goalPosition - transform.position);
+                    Debug.Log(velocityToWalkPath);
+                    if (velocityToWalkPath.magnitude > .1)
+                    {
+                        targetMovementVelocity += velocityToWalkPath * 2;
+                    }
                 }
                 else // Turn normally
                 {

@@ -50,11 +50,25 @@ Material:
         m_Texture: {fileID: 2800000, guid: 4910e02118dc64947b2b69b4b4dd3cef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - Vector1_DA47F82B: -0.03
     - Vector1_EF8DA9C1: 0
     - _FoamWidth: 0.046
+    - _QueueControl: 1
+    - _QueueOffset: 0
     - _Smoothness: 0.916
     - _WaterBottom: 8.91
     - _WaterClarity: -0.32
