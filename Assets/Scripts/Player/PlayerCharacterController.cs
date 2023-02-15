@@ -52,9 +52,8 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
             // Clamp input
-            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, inputs.MoveAxisForward, 0f), 1f);
-            Debug.Log(moveInputVector);
-            //Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
+            //Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
+            Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
 
             // Calculate camera direction and rotation on the character plane
             Vector3 cameraPlanarDirection = Vector3.ProjectOnPlane(inputs.CameraRotation * Vector3.forward, Motor.CharacterUp).normalized;
