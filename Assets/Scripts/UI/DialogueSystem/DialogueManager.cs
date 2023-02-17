@@ -19,10 +19,13 @@ public class DialogueManager : MonoBehaviour
     
     public GameObject dialogBox;
     public Text speakerName, dialogue;
-    public Image speakerSprite, playerSprite;
+    public Image leftSprite, rightSprite;
     private int currIndex;
     private Conversation currentConvo;
     public bool inDialogue = false;
+    [SerializeField]
+    private float typingSpeed = 0.005f;
+    private Coroutine dialogueLineCoroutine;
 
     private void Update()
     {
@@ -42,38 +45,61 @@ public class DialogueManager : MonoBehaviour
         currentConvo = convo;
         speakerName.text = "";
         dialogue.text = "";
+        if (convo.startingLeftSpeaker.speakerSprite != null) {
+            leftSprite.sprite = convo.startingLeftSpeaker.speakerSprite;
+        }
+        if (convo.startingRightSpeaker.speakerSprite != null) {
+            rightSprite.sprite = convo.startingRightSpeaker.speakerSprite;
+        }
 
         ReadNext();    
         inDialogue = true;  
     }
 
-    public void ReadNext()
-    {
-        if (currIndex == currentConvo.allLines.Length)
-        {    
+    public void ReadNext() {
+        if (currIndex == currentConvo.allLines.Length) {    
             EndDialogue();      
         }
-        else 
-        {
-            speakerName.text = currentConvo.allLines[currIndex].speaker.speakerName;
-            dialogue.text = currentConvo.allLines[currIndex].dialogue;
-            if (currentConvo.allLines[currIndex].isPlayer) {
-                playerSprite.enabled = true;
-                playerSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
-                speakerSprite.enabled = false;
-            } else {
-                speakerSprite.enabled = true;
-                speakerSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
-                playerSprite.enabled = false;
+        else {
+            if (dialogueLineCoroutine != null) {
+                StopCoroutine(dialogueLineCoroutine);
             }
+
+            dialogueLineCoroutine = StartCoroutine(DisplayLine(currentConvo.allLines[currIndex].dialogue));
+
+            if (currentConvo.allLines[currIndex].isLeft) {
+                leftSprite.color = new Color32(255, 255, 255, 255);
+                leftSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
+                rightSprite.color = new Color32(110, 110, 110, 255);
+            } else {
+                rightSprite.color = new Color32(255, 255, 255, 255);
+                rightSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
+                leftSprite.color = new Color32(110, 110, 110, 255);
+            }
+
+            speakerName.text = currentConvo.allLines[currIndex].speaker.speakerName;
             currIndex++;
         }
     }
 
-    // EXPLANATION: Perviously when "Z" is pressed at the last line of conversation,
-    // the TryInteract() method will catch the signal whilst inDialogue might have already been set to false.
+    private IEnumerator DisplayLine(string line) {
+        dialogue.text = "";
+
+        foreach (char letter in line.ToCharArray()) {
+            yield return new WaitForSeconds(typingSpeed);
+            dialogue.text += letter;
+        }
+    }
+
+    // Call CloseUI() only when the dialogue does not end with a choice,
+    // otherwise, OpenUI() in ChoiceManager might be called before CloseUI()
+    // in DialogueManager, which leads to isOpen in UiStatus set to false
+    // even when the UI is still oopen
     public void EndDialogue() {
         inDialogue = false;
+        if (dialogueLineCoroutine != null) {
+            StopCoroutine(dialogueLineCoroutine);
+        }
         if (!currentConvo.endWithChoice) {
             UiStatus.CloseUI();
             dialogBox.SetActive(false);

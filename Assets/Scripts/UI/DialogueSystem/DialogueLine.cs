@@ -6,5 +6,6 @@ public class DialogueLine
     public Speaker speaker;
     [TextArea]
     public string dialogue;
-    public bool isPlayer;
+    public bool isLeft;
+    public bool noSprite;
 }

@@ -8,4 +8,6 @@ public class Conversation : ScriptableObject
     [SerializeField]
     public DialogueLine[] allLines; 
     public bool endWithChoice;  
+    public Speaker startingLeftSpeaker;
+    public Speaker startingRightSpeaker;
 }

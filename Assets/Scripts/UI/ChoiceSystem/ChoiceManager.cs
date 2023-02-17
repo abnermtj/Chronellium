@@ -19,6 +19,8 @@ public class ChoiceManager : MonoBehaviour
     private Choice[] choices;
     public GameObject[] choiceButtons;
     public GameObject choiceHolder;
+    public bool inChoice;
+
     private int choiceIndex = -1;
     private bool isActive;
 
@@ -35,6 +37,21 @@ public class ChoiceManager : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(choiceButtons[0]);
         }
+
+        // Must rely on InputManager to receive the signal of the 
+        // player pressing the submit button to set a choice.
+        // See documentation in InputManager for further explanation.
+        if (InputManager.choiceButtonActivated && choiceIndex != -1) {
+            InputManager.choiceButtonActivated = false;
+            choices[choiceIndex].InvokeEvent();
+
+            choiceIndex = -1;
+            choiceHolder.SetActive(false);
+            for (int k = 0; k < choiceButtons.Length; k++) {
+                choiceButtons[0].SetActive(false);
+            }
+            inChoice = false;       
+        }
     }
     
     public void StartChoice(params Choice[] choices) {
@@ -45,19 +62,11 @@ public class ChoiceManager : MonoBehaviour
     public void SetChoice(int i) {
         UiStatus.CloseUI();
         choiceIndex = i;
-
-        choices[i].InvokeEvent();
-
-        choiceIndex = -1;
-        choiceHolder.SetActive(false);
-        choiceButtons[2].SetActive(false);
-        choiceButtons[3].SetActive(false);
-        InputManager.choiceButtonActivated = false;
     }
 
     private void ActivateChoices() {
         UiStatus.OpenUI();
-        InputManager.choiceButtonActivated = true;
+        inChoice = true;
         choiceHolder.SetActive(true);
 
         for (int i = 0; i < choices.Length; i++) {

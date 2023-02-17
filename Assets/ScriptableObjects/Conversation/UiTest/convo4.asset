@@ -14,12 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 6b890d4dad9894c79a211c7c86c94554, type: 2}
-    dialogue: ...
-    isPlayer: 1
+    dialogue: Here's a message I think you'll want to see.
+    isLeft: 1
+    noSprite: 0
   - speaker: {fileID: 11400000, guid: 6b890d4dad9894c79a211c7c86c94554, type: 2}
-    dialogue: Never mind. I think I mistook you for someone else.
-    isPlayer: 1
-  - speaker: {fileID: 11400000, guid: 6b890d4dad9894c79a211c7c86c94554, type: 2}
-    dialogue: (Goodbye, Aka.)
-    isPlayer: 1
+    dialogue: I really need your help.
+    isLeft: 1
+    noSprite: 0
+  - speaker: {fileID: 11400000, guid: e3e65a274d4ca4a8c88560ec4998e069, type: 2}
+    dialogue: (Reads the message.)
+    isLeft: 0
+    noSprite: 0
+  - speaker: {fileID: 11400000, guid: e3e65a274d4ca4a8c88560ec4998e069, type: 2}
+    dialogue: .........
+    isLeft: 0
+    noSprite: 0
+  - speaker: {fileID: 11400000, guid: e3e65a274d4ca4a8c88560ec4998e069, type: 2}
+    dialogue: ..................
+    isLeft: 0
+    noSprite: 0
+  - speaker: {fileID: 11400000, guid: e3e65a274d4ca4a8c88560ec4998e069, type: 2}
+    dialogue: My God...
+    isLeft: 0
+    noSprite: 0
   endWithChoice: 0
+  startingLeftSpeaker: {fileID: 11400000, guid: 6b890d4dad9894c79a211c7c86c94554, type: 2}
+  startingRightSpeaker: {fileID: 11400000, guid: e3e65a274d4ca4a8c88560ec4998e069, type: 2}
