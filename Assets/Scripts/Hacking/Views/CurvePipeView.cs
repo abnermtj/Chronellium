@@ -10,10 +10,6 @@ public class CurvePipeView : PurePipeView
     [SerializeField] private Vector3 unitStartPoint = new Vector3(1f, 0f, 0f);
     [SerializeField] private Vector3 unitEndPoint = new Vector3(0f, 1f, 0f);
 
-    void Awake() {
-        basicPipe.ParentPipe = upstream.GetPipe();
-    }
-
     protected override IEnumerator MoveStream(GameObject content) {
         // X and Y should be scaled simultaneously
         float radius = transform.localScale.x;
@@ -50,12 +46,12 @@ public class CurvePipeView : PurePipeView
         }
 
         if (providesMainInput) {
-            downstream.CallMoveStream(content);
+            downstream.CallMoveStream(content, this);
         } else {
             if (downstream.GetComponent<MergeIntersectorView>() == null) {
                 Debug.LogError("providesMainInput can only be false when attached to merge intersector");
             } else {
-                ((MergeIntersectorView)downstream).CallMoveSidestream(content);
+                ((MergeIntersectorView)downstream).CallMoveSidestream(content, this);
             }
         }
     }

@@ -23,9 +23,7 @@ public class MergeIntersectorView : PipeView
     [SerializeField] private GameObject sideContent;
 
     void Awake() {
-        mergeIntersector.ParentPipe = upstream.GetPipe();
-        mergeIntersector.StepParentPipe = sideUpstream.GetPipe();
-        if (!(upstream is PurePipeView) || !(downstream is PurePipeView) || !(sideUpstream is PurePipeView)) Debug.LogError("Pipes connected to split intersector must be pure pipes");
+        if (!(downstream is PurePipeView) || !(sideUpstream is PurePipeView)) Debug.LogError("Pipes connected to split intersector must be pure pipes");
     }
 
     public override float GetStreamSpeed() { return 0; }
@@ -104,18 +102,33 @@ public class MergeIntersectorView : PipeView
 
         mainVirusWaiting = false;
         sideVirusWaiting = false;
-        downstream.CallMoveStream(coreContent);
+        downstream.CallMoveStream(coreContent, this);
     }
 
-    public void CallMoveSidestream(GameObject content) {
+    public void CallMoveSidestream(GameObject content, PipeView providedSideStream) {
         // Debug.Log($"Moving {content.name} in side stream");
-        AbsorbFromUpstream();
+        AbsorbFromSidestream(providedSideStream);
         StartCoroutine(MoveSidestream(content));
     } 
 
     // Caveat need wait for 
-    protected override void AbsorbFromUpstream() {
+    protected override void AbsorbFromUpstream(PipeView providedUpstream) {
         // Debug.Log($"Intersector absorbfrom called");
+        base.AbsorbFromUpstream(providedUpstream);
+        mergeIntersector.ParentPipe = upstream.GetPipe();
+
+        virusArrivalCount += 1;
+        if (ComponentsReady()){
+            mergeIntersector.SetInput();
+            virusArrivalCount = 0;
+        }
+    }
+
+    void AbsorbFromSidestream(PipeView providedSidestream) {
+        // Debug.Log($"Intersector absorbfrom called");
+        sideUpstream = providedSidestream;
+        mergeIntersector.StepParentPipe = sideUpstream.GetPipe();
+
         virusArrivalCount += 1;
         if (ComponentsReady()){
             mergeIntersector.SetInput();

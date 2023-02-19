@@ -10,10 +10,6 @@ public class StraightPipeView : PurePipeView
     [SerializeField] private Vector3 unitEndPoint = new Vector3(0.5f, 0f, 0f);
     [SerializeField] private Vector3 unitStartPoint = new Vector3(-0.5f, 0f, 0f);
 
-    void Awake() {
-        basicPipe.ParentPipe = upstream.GetPipe();
-    }
-
     // TODO: Substitute all custom directional vectors
     protected override IEnumerator MoveStream(GameObject content) {
         float startPointSpeed = upstream.isSplitIntersector() ? streamSpeed : (streamSpeed + upstream.GetStreamSpeed()) / 2;
@@ -45,12 +41,12 @@ public class StraightPipeView : PurePipeView
         }
 
         if (providesMainInput) {
-            downstream.CallMoveStream(content);
+            downstream.CallMoveStream(content, this);
         } else {
             if (!(downstream is MergeIntersectorView)) {
                 Debug.LogError("providesMainInput can only be false when attached to merge intersector");
             } else {
-                ((MergeIntersectorView)downstream).CallMoveSidestream(content);
+                ((MergeIntersectorView)downstream).CallMoveSidestream(content, this);
             }
         }
     }

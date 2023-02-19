@@ -10,7 +10,10 @@ public abstract class PurePipeView : PipeView
     protected BasicPipe basicPipe = new BasicPipe();
     [SerializeField] protected float streamSpeed;
 
-    protected override void AbsorbFromUpstream() {
+    protected override void AbsorbFromUpstream(PipeView providedUpstream) {
+        base.AbsorbFromUpstream(providedUpstream);
+        
+        basicPipe.ParentPipe = upstream.GetPipe();
         if (absorbsMainOutput) {
             basicPipe.SetInput();
             // Since no visual processing is done DetermineOutput() can be called here

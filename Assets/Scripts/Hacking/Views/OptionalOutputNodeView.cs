@@ -14,7 +14,6 @@ public class OptionalOutputNodeView : GeneralOutputView
 
     void Awake() {
         outputNode = new OutputNode(target);
-        outputNode.ParentPipe = upstream.GetPipe();
     }
     
     protected override IEnumerator MoveStream(GameObject content) {
@@ -47,12 +46,12 @@ public class OptionalOutputNodeView : GeneralOutputView
         }
 
         if (providesMainInput) {
-            downstream.CallMoveStream(content);
+            downstream.CallMoveStream(content, this);
         } else {
             if (!(downstream is MergeIntersectorView)) {
                 Debug.LogError("providesMainInput can only be false when attached to merge intersector");
             } else {
-                ((MergeIntersectorView)downstream).CallMoveSidestream(content);
+                ((MergeIntersectorView)downstream).CallMoveSidestream(content, this);
             }
         }
     }

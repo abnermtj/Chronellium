@@ -45,11 +45,11 @@ public class InputNodeView : PipeView
         inputNode.DetermineOutput();
         GameObject simpleVirus = Instantiate(layeredVirusPrefab, spawnPoint.position, Quaternion.identity);
         simpleVirus.GetComponent<VirusView>()?.InitVirus(inputNode.GetOutput());
-        CallMoveStream(simpleVirus);
+        CallMoveStream(simpleVirus, this);
     }
 
     // Do nothing
-    protected override void AbsorbFromUpstream() {}
+    protected override void AbsorbFromUpstream(PipeView providedUpstream = null) {}
 
     public override Pipe GetPipe() { return inputNode; }
 
@@ -57,6 +57,6 @@ public class InputNodeView : PipeView
     protected override IEnumerator MoveStream(GameObject content) {
         // Addition animation logic can be added here
         yield return null;
-        downstream.CallMoveStream(content);
+        downstream.CallMoveStream(content, this);
     }
 }

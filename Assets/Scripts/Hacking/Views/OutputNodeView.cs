@@ -6,7 +6,6 @@ public class OutputNodeView : GeneralOutputView
 {
     void Awake() {
         outputNode = new OutputNode(target);
-        outputNode.ParentPipe = upstream.GetPipe();
         downstream = null;
     }
 

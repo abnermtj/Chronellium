@@ -7,22 +7,21 @@ using UnityEngine;
 // Pivots at intersection point
 public class SplitIntersectorView : PipeView
 {
+    [SerializeField] private PipeView sideDownstream;
     [SerializeField] private Vector3 unitMainEndPoint = new Vector3(0.5f, 0f, 0f);
     [SerializeField] private Vector3 unitStartPoint = new Vector3(-0.5f, 0f, 0f);
     [SerializeField] private Vector3 unitSideEndPoint = new Vector3(0f, -0.5f, 0f);
     [SerializeField] private Vector3 unitIntersectPoint = Vector3.zero;
     [SerializeField] private GameObject layeredVirusPrefab;
     [SerializeField] private Transform spawnPoint;
-    [SerializeField] private PipeView sideDownstream;
     [SerializeField] private int splitCount;
     private SplitIntersector splitIntersector = new SplitIntersector();
     public LayeredVirus SplittedVirus { get; private set; }
  
     void Awake() {
-        splitIntersector.ParentPipe = upstream.GetPipe();
         splitIntersector.StepChildPipe = sideDownstream.GetPipe();
         splitIntersector.SplitCount = splitCount;
-        if (!(upstream is PurePipeView) || !(downstream is PurePipeView) || !(sideDownstream is PurePipeView)) Debug.LogError("Pipes connected to split intersector must be pure pipes");
+        if (!(downstream is PurePipeView) || !(sideDownstream is PurePipeView)) Debug.LogError("Pipes connected to split intersector must be pure pipes");
     }
 
     protected override IEnumerator MoveStream(GameObject content) {
@@ -69,7 +68,7 @@ public class SplitIntersectorView : PipeView
             yield return null;
         }
 
-        downstream.CallMoveStream(content);
+        downstream.CallMoveStream(content, this);
     }
 
     IEnumerator MoveSideDownstream(GameObject content) {
@@ -87,10 +86,13 @@ public class SplitIntersectorView : PipeView
             yield return null;
         }
 
-        sideDownstream.CallMoveStream(content);
+        sideDownstream.CallMoveStream(content, this);
     }
 
-    protected override void AbsorbFromUpstream() {
+    protected override void AbsorbFromUpstream(PipeView providedUpstream) {
+        base.AbsorbFromUpstream(providedUpstream);
+        
+        splitIntersector.ParentPipe = upstream.GetPipe();
         splitIntersector.SetInput();
     }
    

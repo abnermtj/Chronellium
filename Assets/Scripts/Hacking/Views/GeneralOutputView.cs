@@ -7,7 +7,10 @@ public abstract class GeneralOutputView : PipeView
     [SerializeField] protected VirusBase target;
     protected OutputNode outputNode;
 
-    protected override void AbsorbFromUpstream() {
+    protected override void AbsorbFromUpstream(PipeView providedUpstream) {
+        base.AbsorbFromUpstream(providedUpstream);
+
+        outputNode.ParentPipe = upstream.GetPipe();
         outputNode.SetInput();
     }
 

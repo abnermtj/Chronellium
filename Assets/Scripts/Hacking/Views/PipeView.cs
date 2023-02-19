@@ -6,17 +6,21 @@ using UnityEngine;
 // NOTE: Designer's responsibility to align all the pipes.
 public abstract class PipeView : MonoBehaviour
 {
-    [SerializeField] protected PipeView upstream;
+    protected PipeView upstream;
     [SerializeField] protected PipeView downstream;
-
-    public void CallMoveStream(GameObject content) {
+    // Every pipeview (including subclasses should have an underlying logic pipe)
+    
+    public void CallMoveStream(GameObject content, PipeView providedUpstream) {
         // Debug.Log($"Moving {content.name} in main stream of {name}");
-        AbsorbFromUpstream();
+        AbsorbFromUpstream(providedUpstream);
         StartCoroutine(MoveStream(content));
     }
     protected abstract IEnumerator MoveStream(GameObject content);
     public abstract float GetStreamSpeed();
-    protected abstract void AbsorbFromUpstream();
+    protected virtual void AbsorbFromUpstream(PipeView providedUpstream) { 
+        Debug.Log("Base class absorb upstream called");
+        upstream = providedUpstream; 
+    }
     public abstract Pipe GetPipe();
     public virtual bool isSplitIntersector() { return false; }
 }
