@@ -43,7 +43,7 @@ public class ChoiceManager : MonoBehaviour
         // See documentation in InputManager for further explanation.
         if (InputManager.choiceButtonActivated && choiceIndex != -1) {
             InputManager.choiceButtonActivated = false;
-            choices[choiceIndex].InvokeEvent();
+            choices[choiceIndex].choiceEvent.Invoke(null);
 
             choiceIndex = -1;
             choiceHolder.SetActive(false);
@@ -73,7 +73,7 @@ public class ChoiceManager : MonoBehaviour
             GameObject choiceButton = choiceButtons[i];
             choiceButton.SetActive(true);
             choiceButton.GetComponentInChildren<Text>().text = choices[i].choiceText;
-            choiceButton.GetComponentInChildren<Button>().interactable = choices[i].GetEnabled();
+            choiceButton.GetComponentInChildren<Button>().interactable = choices[i].activated;
         }       
     }
 }
