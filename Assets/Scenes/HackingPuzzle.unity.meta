@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/HackingPuzzle.unity.meta
 guid: 76b180a3695604588aadc338ac8d4892
+========
+guid: e7fc479fd3bcd4185a7aef031c7b7355
+>>>>>>>> main:Assets/Plugins/Asphalt_materials/Scenes/Demo Scene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
