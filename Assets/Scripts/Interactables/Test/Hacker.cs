@@ -5,9 +5,14 @@ using UnityEngine;
 public class Hacker : Interactable
 {
     public Conversation convo1, convo2, convo3, convo4;
-    public Choice choice1, choice2, choice3;
-    public bool choice3Enabled = false;
-    
+    public string choiceText1, choiceText2, choiceText3;
+    private Choice choice1, choice2, choice3;
+    private bool choice3Activated = false;
+
+    void Awake() {
+        InitialiseChoice();
+    }
+
     void Update() {
         TryInteract();
     }
@@ -16,24 +21,26 @@ public class Hacker : Interactable
     {
         DialogueManager.instance.StartConversation(convo1);
 
-        choice1.SetEvent(Choice1);
-        choice2.SetEvent(Choice2);
-        choice3.SetEvent(Choice3);
-
-        choice1.Enable(true);
-        choice2.Enable(true);
-        choice3.Enable(choice3Enabled);
+        choice3.activated = choice3Activated;
 
         ChoiceManager.instance.StartChoice(choice1, choice2, choice3);
+    }
+
+    private void InitialiseChoice() {
+        choice1 = new Choice(choiceText1, Choice1);
+        choice2 = new Choice(choiceText2, Choice2);
+        choice3 = new Choice(choiceText3, choice3Activated, Choice3);
     }
 
     public void Choice1(object o = null) {
         DialogueManager.instance.StartConversation(convo2);
     }
+
     public void Choice2(object o = null) {
         DialogueManager.instance.StartConversation(convo3);
-        choice3Enabled = true;
+        choice3Activated = true;
     }
+
     public void Choice3(object o = null) {
         DialogueManager.instance.StartConversation(convo4);
     }

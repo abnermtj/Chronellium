@@ -355,10 +355,9 @@ MonoBehaviour:
   convo2: {fileID: 11400000, guid: bbe64a68e9ed74026b4006c563832c5f, type: 2}
   convo3: {fileID: 11400000, guid: ccb3961347d65425b9a833c88108d8ec, type: 2}
   convo4: {fileID: 11400000, guid: cdbf7f9cd44cb4c34b5d32c3f4ed60bc, type: 2}
-  choice1: {fileID: 11400000, guid: 1cdf4c072e11b4273ab729a61ef2d657, type: 2}
-  choice2: {fileID: 11400000, guid: a5a2ff7957dae472a9d57f5b9af96bd6, type: 2}
-  choice3: {fileID: 11400000, guid: a138011dcdc4b4986bce996681b36b12, type: 2}
-  choice3Enabled: 0
+  choiceText1: Introduce yourself
+  choiceText2: Ask for her help
+  choiceText3: Pass her the message
 --- !u!1 &694420880
 GameObject:
   m_ObjectHideFlags: 0
