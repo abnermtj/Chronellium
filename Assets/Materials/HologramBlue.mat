@@ -47,9 +47,9 @@ Material:
     - _ScanlineOffset: 0
     - _ScrollSpeed: 0.05
     m_Colors:
-    - _FresnelColor: {r: 1.1721917, g: 9.734288, b: 7.491834, a: 1}
+    - _FresnelColor: {r: 0.5102261, g: 4.237095, b: 3.2610102, a: 1}
     - _HologramTiling: {r: 0.2, g: 40, b: 0, a: 0}
-    - _MainColor: {r: 23.637976, g: 33.680252, b: 39.396626, a: 1}
+    - _MainColor: {r: 5.1022606, g: 7.2762675, b: 8.47419, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8319165243923752906
 MonoBehaviour:
