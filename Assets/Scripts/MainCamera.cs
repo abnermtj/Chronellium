@@ -1,11 +1,18 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 namespace KinematicCharacterController.Examples
 {
     public class MainCamera : MonoBehaviour
     {
+        [Header("Pathing")]
+        public CinemachineSmoothPath cameraPath;
+
+        public CinemachinePath walkPath;
+        public GameObject player;
+
         [Header("Framing")]
         public Camera Camera;
 
@@ -90,7 +97,17 @@ namespace KinematicCharacterController.Examples
 
         public void UpdateWithInput(float deltaTime, float zoomInput)
         {
-            if (FollowTransform)
+            if (cameraPath)
+            {
+                // Match the walk path's progress
+                float curWalkPoint = walkPath.FindClosestPoint(player.transform.position, 0, -1, 10);
+                Debug.Log(curWalkPoint);
+
+                // Apply position
+                Transform.position = cameraPath.EvaluatePosition(curWalkPoint);
+                Transform.LookAt(FollowTransform);
+            }
+            else if (FollowTransform)
             {
                 // Process distance input
                 if (_distanceIsObstructed && Mathf.Abs(zoomInput) > 0f)

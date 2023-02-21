@@ -1,5 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8424326053843585593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2e32e102e44abeb72209e7ce030c3, type: 3}
+  m_Name: RealisticRainDrop
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    renderPassEvent: 500
+    blurMaterial: {fileID: 2100000, guid: 9d078ce48ec514bd59e1706af992dbe5, type: 2}
+    rainMaterial: {fileID: 2100000, guid: 5f4eb2e0ab86349619cf3da0b6899fa1, type: 2}
+    blur: 0
+    blurDownSampleNum: 2
+    blurSpreadSize: 3
+    blurIterations: 3
+    rtQuality: 4
+    fade: 0.159
+    intensity: 1.09
+--- !u!114 &-8368896533181613910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cbabd8e2cb2e4f8a930752453adf79a, type: 3}
+  m_Name: Beautify
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  shader: {fileID: 4800000, guid: 55d70ca4ea7504a38b66170bbe587b2f, type: 3}
+  renderPassEvent: 500
+  ignorePostProcessingOption: 0
+  cameraLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &-145847735472512537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +96,10 @@ MonoBehaviour:
       type: 3}
   m_RendererFeatures:
   - {fileID: 5736457676649799701}
-  m_RendererFeatureMap: 1520c625ddfd9b4f
+  - {fileID: 1438324778727874957}
+  - {fileID: -8368896533181613910}
+  - {fileID: -8424326053843585593}
+  m_RendererFeatureMap: 1520c625ddfd9b4f8da1b703c4f4f513aa38b681f1b4db8bc7b5958816c8168b
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -94,6 +140,37 @@ MonoBehaviour:
   m_ClusteredRendering: 0
   m_TileSize: 32
   m_IntermediateTextureMode: 1
+--- !u!114 &1438324778727874957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4641969ffd302f4ba2bcf2d83f19cb5, type: 3}
+  m_Name: CinematicURPPostProcessingPRISM
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    renderersAfterOpaqueAndSky:
+    - PRISMSunshafts_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    renderersBeforePostProcess:
+    - PRISMEffects_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - PRISMSharpen_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - PRISMLongExposure_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - PRISMDoF_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - PRISMDLAA_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - PRISMFilters_URP, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    renderersAfterPostProcess: []
 --- !u!114 &5736457676649799701
 MonoBehaviour:
   m_ObjectHideFlags: 0

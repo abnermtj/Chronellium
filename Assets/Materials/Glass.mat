@@ -63,7 +63,7 @@ Material:
     - _DisortStrength: 1
     - _DistortionOnTexture: 1
     - _Metalic: 0.246
-    - _Metallic: 0.1
+    - _Metallic: 0.127
     - _NormalStrenght: 0.01
     - _NormalStrength: 0.1
     - _QueueControl: 0

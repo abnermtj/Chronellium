@@ -1,4 +1,5 @@
 using UnityEngine;
+using Cinemachine;
 
 /* Controls the movement and animation of the character being played */
 
@@ -16,6 +17,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public KinematicCharacterMotor Motor;
         public Transform MeshRoot;
         public GameObject PlayerSprite;
+        public CinemachinePath walkPath;
 
         [Header("Stable Movement")]
         public float MaxStableMoveSpeed = 10f;
@@ -34,6 +36,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
 
         public Vector3 Gravity = new Vector3(0, -30f, 0);
 
+        private Vector3 _moveInputVectorNoRot;
         private Vector3 _moveInputVector;
         private Vector3 _lookInputVector;
 
@@ -49,6 +52,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
             // Clamp input
+            //Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
             Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, 0f), 1f);
 
             // Calculate camera direction and rotation on the character plane
@@ -60,6 +64,7 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
             Quaternion cameraPlanarRotation = Quaternion.LookRotation(cameraPlanarDirection, Motor.CharacterUp);
 
             // Move and look inputs
+            _moveInputVectorNoRot = moveInputVector;
             _moveInputVector = cameraPlanarRotation * moveInputVector;
             _lookInputVector = cameraPlanarDirection;
         }
@@ -103,9 +108,29 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
                 currentVelocity = Motor.GetDirectionTangentToSurface(currentVelocity, Motor.GroundingStatus.GroundNormal) * currentVelocity.magnitude;
 
                 // Calculate target velocity
-                Vector3 inputRight = Vector3.Cross(_moveInputVector, Motor.CharacterUp);
-                Vector3 reorientedInput = Vector3.Cross(Motor.GroundingStatus.GroundNormal, inputRight).normalized * _moveInputVector.magnitude;
-                targetMovementVelocity = reorientedInput * MaxStableMoveSpeed;
+
+                // Turn according to the dolly path
+                if (walkPath)
+                {
+                    Vector3 inputRight = Vector3.Cross(_moveInputVectorNoRot, Motor.CharacterUp);
+                    Vector3 reorientedInput = Vector3.Cross(Motor.GroundingStatus.GroundNormal, inputRight).normalized * _moveInputVector.magnitude;
+                    Quaternion orientation = walkPath.EvaluateOrientation(walkPath.FindClosestPoint(transform.position, 0, -1, 10));
+                    targetMovementVelocity = orientation * inputRight * MaxStableMoveSpeed;
+
+                    var goalPosition = walkPath.EvaluatePosition(walkPath.FindClosestPoint(transform.position, 0, -1, 10));
+                    var velocityToWalkPath = (goalPosition - transform.position);
+                    Debug.Log(velocityToWalkPath);
+                    if (velocityToWalkPath.magnitude > .1)
+                    {
+                        targetMovementVelocity += velocityToWalkPath * 2;
+                    }
+                }
+                else // Turn normally
+                {
+                    Vector3 inputRight = Vector3.Cross(_moveInputVector, Motor.CharacterUp);
+                    Vector3 reorientedInput = Vector3.Cross(Motor.GroundingStatus.GroundNormal, inputRight).normalized * _moveInputVector.magnitude;
+                    targetMovementVelocity = reorientedInput * MaxStableMoveSpeed;
+                }
 
                 // Smooth movement Velocity
                 currentVelocity = Vector3.Lerp(currentVelocity, targetMovementVelocity, 1 - Mathf.Exp(-StableMovementSharpness * deltaTime));
