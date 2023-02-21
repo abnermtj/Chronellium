@@ -534,7 +534,7 @@ MonoBehaviour:
     m_Value: 0.01
   lensDirtIntensity:
     m_OverrideState: 1
-    m_Value: 0.62
+    m_Value: 0.1
   lensDirtThreshold:
     m_OverrideState: 0
     m_Value: 0.5
