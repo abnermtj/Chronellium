@@ -1,0 +1,2064 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8537887249107247026
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 1
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 1
+    m_Value: 3.5
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 1
+    m_Value: 0
+  lightness:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 1
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 1
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 1
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 1
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 1
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 1
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 1
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 1
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 1
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 1
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 1
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 1
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 1
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 1
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 1
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 1
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 1
+    m_Value: 1
+  sensorNoise:
+    m_OverrideState: 1
+    m_Value: 9
+  noiseRedSaturation:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 1
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 1
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 1
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 1
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 1
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 1
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 1
+    m_Value: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 1
+    m_Value: 0
+  useLut:
+    m_OverrideState: 1
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 1
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 1
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &-736374496815170015
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &-499047003790419264
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &-273666202893344386
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: CUPPISO12800
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -8537887249107247026}
+--- !u!114 &425069894852136202
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &3604360834764087832
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &5748097778754535790
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+--- !u!114 &6863775185800731417
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4fc57b0fd0fb34a8abc03210086df7, type: 3}
+  m_Name: PRISMEffects
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  colorTemperature:
+    m_OverrideState: 0
+    m_Value: 6500
+    min: 1000
+    max: 40000
+  colorTint:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLinearSpace:
+    m_OverrideState: 0
+    m_Value: 0
+  lightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+    min: 0
+    max: 1
+  lightnessSlope:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labA_GreenAndMagenta:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  labB_YellowAndBlue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useLensDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+  barrelDistortion:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useChromaticAberration:
+    m_OverrideState: 0
+    m_Value: 0
+  glassDispersion:
+    m_OverrideState: 0
+    m_Value: 0
+  petzvalDistortionValue:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 2
+  chromaticColorWeights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  useBloom:
+    m_OverrideState: 0
+    m_Value: 0
+  useHighQualityBloom:
+    m_OverrideState: 0
+    m_Value: 1
+  useBloomStability:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomStrength:
+    m_OverrideState: 0
+    m_Value: 0.05
+    min: 0
+    max: 1
+  bloomThreshold:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 1
+  bloomSaturation:
+    m_OverrideState: 0
+    m_Value: 1.5
+    min: 0
+    max: 2
+  bloomRadius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.2
+    max: 3
+  useLensDirt:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensDirtExposure:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  increaseBloomClarity:
+    m_OverrideState: 0
+    m_Value: 1
+  bloomFastMode:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomUseLessPassesForMobile:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomGradualThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomDebug:
+    m_OverrideState: 0
+    m_Value: 0
+  useFilmicNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  sensorNoise:
+    m_OverrideState: 0
+    m_Value: 4
+  noiseRedSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseGreenSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  noiseBlueSaturation:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  sensorPixelSize:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  useTVNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  noiseTVSpeed:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVWidth:
+    m_OverrideState: 0
+    m_Value: 0.2
+    min: 0
+    max: 1
+  noiseTVAngle:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  useDither:
+    m_OverrideState: 0
+    m_Value: 0
+  ditherBitDepth:
+    m_OverrideState: 0
+    m_Value: 10
+  vignetteStrength:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  useColorCorrection:
+    m_OverrideState: 0
+    m_Value: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0.5}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 0}
+  gain: {r: 1, g: 1, b: 1, a: 0}
+  saturations:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  colorVibrance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 0.2
+  contrast:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useCubeLUTs:
+    m_OverrideState: 0
+    m_Value: 0
+  useLut:
+    m_OverrideState: 0
+    m_Value: 0
+  twoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -1
+    max: 1
+  useSecondLut:
+    m_OverrideState: 0
+    m_Value: 0
+  secondaryTwoDLookupTex:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  secondaryLutLerpAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  tonemap:
+    m_OverrideState: 0
+    m_Value: 0
+  gammaOffset:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -0.4
+    max: 0.4
+  fsOverlayTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  fsOverlayColorContribution:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1

@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>ca5a43a5876758f4e9fb406905746835</guid>
+    <fileName>Assets/Plugins/Animated Table Fan/Scripts/UnluckAnimatedMesh.cs</fileName>
+    <timeStamp>2023-02-19T02:23:13.0411566+08:00</timeStamp>
+    <typeFullName>
+      <string>UnluckAnimatedMesh</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>410d173d2e7abad4a88e6f946d895602</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMDepthOfField.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.8655028+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMDepthOfField</string>
+      <string>PRISMDoF_URP</string>
+      <string>PRISMDoF_URP+MyCustomData</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4b31002f73478bf45bc32febf67d5ed4</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMDirectionalLocalisedAntiAliasing.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.8849733+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMDirectionalLocalisedAntiAliasing</string>
+      <string>PRISMDLAA_URP</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bb4fc57b0fd0fb34a8abc03210086df7</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMEffects.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.9019235+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMEffects</string>
+      <string>PRISMEffects_URP</string>
+      <string>PRISM.Utils.BloomThresholdType</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2929a45f7592b0844b719050b5b2f7c5</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMFilters.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.9178797+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMFilters</string>
+      <string>PRISMFilters_URP</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e281ab63710bbaf43ad7b3185a39a61f</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMLongExposure.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.948797+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMLongExposure</string>
+      <string>PRISMLongExposure_URP</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>942415458b7fc6d4599495af227d074d</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMSharpen.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.9654335+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMSharpen</string>
+      <string>PRISMSharpen_URP</string>
+      <string>PRISM.Utils.GaussianKernel</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d1f1c903230d0824f8f1fef6f51e54bf</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/PRISMSunshafts.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.9934106+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMSunshafts</string>
+      <string>PRISMSunshafts_URP</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f13aa252bd3bf9943b1d65e68d93dcfb</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/ICharacterController.cs</fileName>
+    <timeStamp>2022-06-08T01:05:03+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.ICharacterController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8ae7eceec45f1be4c8450edc46c0ad36</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/IMoverController.cs</fileName>
+    <timeStamp>2022-06-08T01:04:37+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.IMoverController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2b43d8459fe4812488b2c47ac60e41c3</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/KCCSettings.cs</fileName>
+    <timeStamp>2022-06-08T01:04:10+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.KCCSettings</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4d1bc5515e3ab954e80599c538834774</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/KinematicCharacterMotor.cs</fileName>
+    <timeStamp>2023-01-31T03:18:41.7197669+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.RigidbodyInteractionType</string>
+      <string>KinematicCharacterController.StepHandlingMethod</string>
+      <string>KinematicCharacterController.MovementSweepState</string>
+      <string>KinematicCharacterController.KinematicCharacterMotorState</string>
+      <string>KinematicCharacterController.OverlapResult</string>
+      <string>KinematicCharacterController.CharacterGroundingReport</string>
+      <string>KinematicCharacterController.CharacterTransientGroundingReport</string>
+      <string>KinematicCharacterController.HitStabilityReport</string>
+      <string>KinematicCharacterController.RigidbodyProjectionHit</string>
+      <string>KinematicCharacterController.KinematicCharacterMotor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dbd80c9a62d41084aad50ae44255beb9</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/KinematicCharacterSystem.cs</fileName>
+    <timeStamp>2022-06-08T01:04:56+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.KinematicCharacterSystem</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>075ccbe9837b0744985e09ba3f015b9b</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/PhysicsMover.cs</fileName>
+    <timeStamp>2022-06-08T01:03:57+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.PhysicsMoverState</string>
+      <string>KinematicCharacterController.PhysicsMover</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>63e8828991cf67f42bfeb498686aad0b</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/ReadOnlyAttribute.cs</fileName>
+    <timeStamp>2022-06-08T01:04:26+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.ReadOnlyAttribute</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0c7e755dc2cfc9342a9678ffe3c4e2c9</guid>
+    <fileName>Assets/Plugins/Planar Reflections 4/Source Code/PlanarReflectionCaster.cs</fileName>
+    <timeStamp>2023-02-19T02:23:21.8377341+08:00</timeStamp>
+    <typeFullName>
+      <string>PlanarReflections4.PlanarReflectionCaster</string>
+      <string>PlanarReflections4.PlanarReflectionCaster+BlurSettings</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dde72cd477072284786978889ffce393</guid>
+    <fileName>Assets/Plugins/Planar Reflections 4/Source Code/PlanarReflectionRenderer.cs</fileName>
+    <timeStamp>2023-02-19T02:23:21.8656625+08:00</timeStamp>
+    <typeFullName>
+      <string>PlanarReflections4.PlanarReflectionSettings</string>
+      <string>PlanarReflections4.ReflectionData</string>
+      <string>PlanarReflections4.PlanarReflectionRenderer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f70bdb593b23e21488a67950ba2eff70</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetCollector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80b196a79b1649f4aa85ec38b9a055e4</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>148a22d92d21d174a9f4e6df2f5a12e1</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ClassReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2d69d55b7daa361489a2463e65385d59</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.CollectionData</string>
+      <string>UnitySweeper.TypeDate</string>
+      <string>UnitySweeper.IReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fa806c448a25dd446a33688f850901a1</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>813579842a37d5a4da880f976dcbff0f</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-14T11:37:41+08:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>11b7e89a4cae94542bcb6c9be7c2ee9b</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/ConfigEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:39+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ConfigEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>990b9a5f1d3a1cd41aa984f4b23a3d1a</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/ConfigOverrideEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:59+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ConfigOverrideEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0192ed587a87bfb41b9ec2ac3f6098e2</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/DynamicOcclusionAbstractBaseEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:36+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionAbstractBaseEditor`1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cd6cc47c61bc28e4fb4568a2e48d1c32</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/DynamicOcclusionDepthBufferEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:31:06+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionDepthBufferEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>296c1775a3a72104091469b9f856ae7b</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/DynamicOcclusionRaycastingEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:42+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionRaycastingEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>11a6b248e0eebc44bb9ba203d8a8d77a</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EditorCommon.cs</fileName>
+    <timeStamp>2021-06-11T22:30:38+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EditorCommon</string>
+      <string>VLB.EditorCommon+EditorGUIWidth</string>
+      <string>VLB.EditorCommon+LabelWidth</string>
+      <string>VLB.EditorCommon+FieldWidth</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f87284b87b8be7c4b9708f25ddb6669b</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EditorData.cs</fileName>
+    <timeStamp>2021-06-11T22:31:14+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EditorData</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>554d3ed087749984585096b2d627574b</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EditorExtensions.cs</fileName>
+    <timeStamp>2021-06-11T22:30:50+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EditorExtensions</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>962298216d0e67f4c9294aa63ae5e9a4</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EditorStrings.cs</fileName>
+    <timeStamp>2021-06-11T22:30:59+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Config</string>
+      <string>VLB.Config+RefreshShaderFlags</string>
+      <string>VLB.SkewingHandle</string>
+      <string>VLB.TriggerZone</string>
+      <string>VLB.EditorStrings</string>
+      <string>VLB.EditorStrings+Common</string>
+      <string>VLB.EditorStrings+Beam</string>
+      <string>VLB.EditorStrings+DustParticles</string>
+      <string>VLB.EditorStrings+DynOcclusion</string>
+      <string>VLB.EditorStrings+TriggerZone</string>
+      <string>VLB.EditorStrings+SkewingHandle</string>
+      <string>VLB.EditorStrings+Config</string>
+      <string>VLB.EditorStrings+Effects</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>18e0ceec3655f144990c0deb0f6493bb</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EffectAbstractBaseEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:39+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectAbstractBaseEditor`1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>acd24c9fc8968d74aa2ffe5a14630857</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EffectFlickerEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:31:01+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectFlickerEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e5ae0f0491b8ca743b77f3ffbaf703d1</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/EffectPulseEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:31:11+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectPulseEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ccdd6181af634264e819236c461b2ac4</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/FoldableHeader.cs</fileName>
+    <timeStamp>2021-06-11T22:31:06+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.FoldableHeader</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f6591152e52a89a4dba853ddca8c00f6</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/OnBuildPostprocess.cs</fileName>
+    <timeStamp>2021-06-11T22:31:13+08:00</timeStamp>
+    <typeFullName>
+      <string>OnBuildPostprocess</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9b7dc575bd0b12c449148d07bc32fe49</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/OnBuildPreprocess.cs</fileName>
+    <timeStamp>2021-06-11T22:31:00+08:00</timeStamp>
+    <typeFullName>
+      <string>OnBuildPreprocess</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f54417ff4a50cfb4ba556d04b6689eab</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/OnBuildTargetChanged.cs</fileName>
+    <timeStamp>2021-06-11T22:31:13+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ActiveBuildTargetListener</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f95e2188469d17a4081bb82c36e6e8de</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/SkewingHandleEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:31:14+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.SkewingHandleEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b0e1e5cc7f9712648b3438ad03f9f073</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/TargetList.cs</fileName>
+    <timeStamp>2021-06-11T22:31:02+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.TargetList`1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ded92402e19378c4a90ceb5ed4b418f9</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/TriggerZoneEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:31:09+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.TriggerZoneEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>264a06b7c9bbc6940bd66056f4a38291</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/VolumetricDustParticlesEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:41+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.VolumetricDustParticlesEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2bd45af80c148e249bd23ff7970f6181</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Editor/VolumetricLightBeamEditor.cs</fileName>
+    <timeStamp>2021-06-11T22:30:43+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.VolumetricLightBeamEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>eb22530640d12f542baf4bb5bf6306ff</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/BatchingHelper.cs</fileName>
+    <timeStamp>2021-06-11T22:31:12+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.BatchingHelper</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>50a48a2b69575db4c8b5bf5aa8186d89</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/BeamGeometry.cs</fileName>
+    <timeStamp>2021-06-11T22:30:48+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.BeamGeometry</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b455c84cf6c7ad74e84e15749caaccc3</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/CachedLightProperties.cs</fileName>
+    <timeStamp>2021-06-11T22:31:03+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.CachedLightProperties</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fed3f3d91454db34f894abc9ea1d8ec4</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Config.cs</fileName>
+    <timeStamp>2021-06-11T22:31:16+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Config</string>
+      <string>VLB.Config+RefreshShaderFlags</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a9536b6488d9e024db1c753e8e90657e</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/ConfigOverride.cs</fileName>
+    <timeStamp>2021-06-11T22:31:00+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ConfigOverride</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>aa337c7dd20e18b49b4b0b5b42e59e96</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Consts.cs</fileName>
+    <timeStamp>2021-06-11T22:31:01+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Config</string>
+      <string>VLB.Config+RefreshShaderFlags</string>
+      <string>VLB.Consts</string>
+      <string>VLB.Consts+Help</string>
+      <string>VLB.Consts+Internal</string>
+      <string>VLB.Consts+Beam</string>
+      <string>VLB.Consts+DustParticles</string>
+      <string>VLB.Consts+DynOcclusion</string>
+      <string>VLB.Consts+Effects</string>
+      <string>VLB.Consts+Config</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1cb6a728dad16224884d567a0a1d618d</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/DummyMaterial.cs</fileName>
+    <timeStamp>2021-06-11T22:30:40+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DummyMaterial</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c87e171f8942d184e958eba76fd39108</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/DynamicOcclusionAbstractBase.cs</fileName>
+    <timeStamp>2021-06-11T22:31:05+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionAbstractBase</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fdb43fff075aa0b4b995dcfaed06dc44</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/DynamicOcclusionDepthBuffer.cs</fileName>
+    <timeStamp>2021-06-11T22:31:15+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionDepthBuffer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>558dd6d156642974780bc97cd2ab1bd2</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/DynamicOcclusionRaycasting.cs</fileName>
+    <timeStamp>2021-06-11T22:30:50+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.DynamicOcclusionRaycasting</string>
+      <string>VLB.DynamicOcclusionRaycasting+HitResult</string>
+      <string>VLB.DynamicOcclusionRaycasting+EditorDebugData</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2a25e62b0a3d171468d83a4db6928379</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/EffectAbstractBase.cs</fileName>
+    <timeStamp>2021-06-11T22:30:42+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectAbstractBase</string>
+      <string>VLB.EffectAbstractBase+ComponentsToChange</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>de6c986ea168387458edac98bcd43dfd</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/EffectFlicker.cs</fileName>
+    <timeStamp>2021-06-11T22:31:09+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectFlicker</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d4d69db65d6d47040b7bd02d847008da</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/EffectPulse.cs</fileName>
+    <timeStamp>2021-06-11T22:31:07+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.EffectPulse</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>368667f41a4ca5a48bb73bc39c67ab69</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Enums.cs</fileName>
+    <timeStamp>2021-06-11T22:30:45+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.FeatureEnabledColorGradient</string>
+      <string>VLB.ColorMode</string>
+      <string>VLB.AttenuationEquation</string>
+      <string>VLB.BlendingMode</string>
+      <string>VLB.ShaderAccuracy</string>
+      <string>VLB.NoiseMode</string>
+      <string>VLB.MeshType</string>
+      <string>VLB.RenderPipeline</string>
+      <string>VLB.RenderingMode</string>
+      <string>VLB.RenderQueue</string>
+      <string>VLB.Dimensions</string>
+      <string>VLB.PlaneAlignment</string>
+      <string>VLB.DynamicOcclusionUpdateRate</string>
+      <string>VLB.ParticlesDirection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0e4bae9c762e9004296c04beb33798ed</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/GlobalMesh.cs</fileName>
+    <timeStamp>2021-06-11T22:30:38+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.GlobalMesh</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e7b5213963066994eaa8a96b953deb97</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/HighlightNullAttribute.cs</fileName>
+    <timeStamp>2021-06-11T22:31:11+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.HighlightNullAttribute</string>
+      <string>VLB.HighlightNullDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6f3b53f8b071fa74997d838b723bcfa7</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/MaterialManager.cs</fileName>
+    <timeStamp>2021-06-11T22:30:54+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.BlendingMode</string>
+      <string>VLB.ShaderAccuracy</string>
+      <string>VLB.MaterialManager</string>
+      <string>VLB.MaterialManager+BlendingMode</string>
+      <string>VLB.MaterialManager+Noise3D</string>
+      <string>VLB.MaterialManager+DepthBlend</string>
+      <string>VLB.MaterialManager+ColorGradient</string>
+      <string>VLB.MaterialManager+DynamicOcclusion</string>
+      <string>VLB.MaterialManager+MeshSkewing</string>
+      <string>VLB.MaterialManager+ShaderAccuracy</string>
+      <string>VLB.MaterialManager+StaticProperties</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>51c15cec95cca374a92f3e0c0d7b7fe8</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/MaterialModifier.cs</fileName>
+    <timeStamp>2021-06-11T22:30:49+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.MaterialModifier</string>
+      <string>VLB.MaterialModifier+Interface</string>
+      <string>VLB.MaterialModifier+Callback</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bc0059e5d7876fb4b97e542dcc0e8350</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/MeshGenerator.cs</fileName>
+    <timeStamp>2021-06-11T22:31:03+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.MeshGenerator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dbd77861b0969d4469f82aed94865349</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/MinMaxRangeFloat.cs</fileName>
+    <timeStamp>2021-06-11T22:31:08+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.MinMaxRangeFloat</string>
+      <string>VLB.MinMaxRangeAttribute</string>
+      <string>VLB.MinMaxRangeFloatPropertyDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>57abb2ea789b7604eae964ef5c2fdcbb</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Noise3D.cs</fileName>
+    <timeStamp>2021-06-11T22:30:51+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Noise3D</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>30abcef3cbaaee1408d5966265dc731b</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/PlatformHelper.cs</fileName>
+    <timeStamp>2021-06-11T22:30:43+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.PlatformHelper</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b55955c734a6a04db43faaa6390235a</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/PolygonHelper.cs</fileName>
+    <timeStamp>2021-06-11T22:30:54+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.PolygonHelper</string>
+      <string>VLB.PolygonHelper+Plane2D</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5a0074f2031380c488da5e38151a7a47</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/ShaderGenerator.cs</fileName>
+    <timeStamp>2021-06-11T22:30:51+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ShaderGenerator</string>
+      <string>VLB.ShaderGenerator+EnabledFeatures</string>
+      <string>VLB.ShaderGenerator+GenPass</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d03404178af782e419e82d8a3b973df5</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/ShaderKeywords.cs</fileName>
+    <timeStamp>2021-06-11T22:31:07+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ShaderKeywords</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f7c111997c90d464c94acc87b1711d59</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/ShaderProperties.cs</fileName>
+    <timeStamp>2021-06-11T22:31:14+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.ShaderProperties</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>39d38d9261901ee459f4c704884f0ad3</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/SkewingHandle.cs</fileName>
+    <timeStamp>2021-06-11T22:30:45+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.SkewingHandle</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8086b200893fe0c4e88663a09fdc78a3</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/SRPHelper.cs</fileName>
+    <timeStamp>2021-06-11T22:30:55+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.RenderPipeline</string>
+      <string>VLB.SRPHelper</string>
+      <string>VLB.SRPHelper+RenderPipeline</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>db47de7f89a659b49982236fc59b4e04</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/TransformUtils.cs</fileName>
+    <timeStamp>2021-06-11T22:31:08+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.TransformUtils</string>
+      <string>VLB.TransformUtils+Packed</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5b5217c9f8723a447824a7530d14c03d</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/TriggerZone.cs</fileName>
+    <timeStamp>2021-06-11T22:30:52+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.TriggerZone</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8a3c52d4dd2a02a4499d1c94fcc9c542</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Utils.cs</fileName>
+    <timeStamp>2021-06-11T22:30:57+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Utils</string>
+      <string>VLB.Utils+FloatPackingPrecision</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c62ea6a423ab5824c9d344b83ee9706e</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/Version.cs</fileName>
+    <timeStamp>2021-06-11T22:31:05+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.Version</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e39f0f7e17f11f2448932da58e9b63d4</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/VolumetricDustParticles.cs</fileName>
+    <timeStamp>2021-06-11T22:31:09+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.VolumetricDustParticles</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b69c542c9a8f4f44a3123e3fa103d13</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Scripts/VolumetricLightBeam.cs</fileName>
+    <timeStamp>2023-02-20T05:44:52.4913494+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB.VolumetricLightBeam</string>
+      <string>VLB.VolumetricLightBeam+OnWillCameraRenderCB</string>
+      <string>VLB.VolumetricLightBeam+OnBeamGeometryInitialized</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9d3a6f13658cd834483e5c2f8b942da4</guid>
+    <fileName>Assets/Plugins/Animated Table Fan/Scripts/Demo/SmoothCameraOrbit.cs</fileName>
+    <timeStamp>2023-02-19T02:23:12.7992446+08:00</timeStamp>
+    <typeFullName>
+      <string>SmoothCameraOrbit</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5d04c06d979b0144385c569a03a6ffaf</guid>
+    <fileName>Assets/Plugins/Animated Table Fan/Scripts/Demo/UnluckFlagGUI.cs</fileName>
+    <timeStamp>2023-02-19T02:23:12.8847927+08:00</timeStamp>
+    <typeFullName>
+      <string>UnluckFlagGUI</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b059e5827b513f14588fde6e52b59101</guid>
+    <fileName>Assets/Plugins/Animated Table Fan/Scripts/Demo/UnluckFPS.cs</fileName>
+    <timeStamp>2023-02-19T02:23:12.8728204+08:00</timeStamp>
+    <typeFullName>
+      <string>UnluckFPS</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fb31d5d9bdcf4e94fb0e9ab7efea9323</guid>
+    <fileName>Assets/Plugins/Animated Table Fan/Scripts/Editor/UnluckAnimatedMeshEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:12.9818502+08:00</timeStamp>
+    <typeFullName>
+      <string>UnluckAnimatedMeshEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f254be33cd84f4341a7ea1deab7213b7</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Editor/BeautifyEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:13.9259724+08:00</timeStamp>
+    <typeFullName>
+      <string>Beautify.Universal.BeautifyEditor</string>
+      <string>Beautify.Universal.BeautifyEditor+MaxFloatParameterDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7e44552cb4a254ddd9e75bd9d95f0a0a</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Editor/BeautifyOptCompiler.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.1922887+08:00</timeStamp>
+    <typeFullName>
+      <string>Beautify.Universal.BeautifyOptCompiler</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>880fcc03372614592baab50db0731b13</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Editor/CubeLUTImporter.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.2603328+08:00</timeStamp>
+    <typeFullName>
+      <string>Beautify.Universal.CubeLUTImporter</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4b48e93dd24694f528b5e755ab766cad</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Editor/FrameBrowser.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.4309807+08:00</timeStamp>
+    <typeFullName>
+      <string>Beautify.Universal.FrameBrowser</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3ea90863c340046bab9e7c20c63fb798</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Editor/LUTBrowser.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.445978+08:00</timeStamp>
+    <typeFullName>
+      <string>Beautify.Universal.LUTBrowser</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c133717c76e564a5fa90d7f12908d17e</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Runtime/Beautify.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.6125648+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7cbabd8e2cb2e4f8a930752453adf79a</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Runtime/BeautifyRendererFeature.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.6378922+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4b900b6d691ae49f8a12753b63b449e7</guid>
+    <fileName>Assets/Plugins/Beautify/URP/Runtime/BeautifySettings.cs</fileName>
+    <timeStamp>2023-02-19T02:23:14.6596945+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>694cc93fc2570524180c2086022f32d2</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Editor/PRISMDepthOfFieldEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.7545875+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMDepthOfFieldEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c171b0ba803e76044888e4da74c67a92</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Editor/PRISMEditorHelper.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.7717269+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMEditorHelper</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9789861441664c941b5016908759dea2</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Editor/PRISMEffectsEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.8056334+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMEffectsEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6ab2ed73b2409c84abafdbdc6d569b6d</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Editor/PRISMSunshaftsEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.8350735+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISMSunshaftsEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e887158d83e102b40abae0dcd01941fd</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/CUPPISONoise.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.0184892+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISM.Utils.ISOValue</string>
+      <string>PRISM.Utils.CUPPISONoise</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>78f0d5d75c8291441b7404449b5aef72</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/CUPPLUTCreator.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.1880977+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISM.Utils.CUPPLUTCreator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e92dc6b4551e4784ba5f1dce466f70a2</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/CUPPRuntimePropertyAdjuster.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.2570277+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISM.Utils.PostProcessPropertyToChangeType</string>
+      <string>PRISM.Utils.CUPPRuntimePropertyAdjuster</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>102cbd4de4c5ea8488be5bb0fe5e0a1a</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/CUPPURPHelpers.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.2852132+08:00</timeStamp>
+    <typeFullName>
+      <string>PRISM.Utils.CUPPURPHelpers</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>008f98af35be8234e95a7a1cba30ce0c</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/RotateObject.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.3011711+08:00</timeStamp>
+    <typeFullName>
+      <string>HorizonBasedAmbientOcclusion.Universal.RotateObject</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8382964fdcb713a469b95b63a75174d7</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/Utility/Rotator.cs</fileName>
+    <timeStamp>2023-02-19T02:23:16.32012+08:00</timeStamp>
+    <typeFullName>
+      <string>Rotator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d8d2961c15394b549ba0715ebb931623</guid>
+    <fileName>Assets/Plugins/David/aircon4/Scripts/StartAnimationAtRandomFrame.cs</fileName>
+    <timeStamp>2023-02-19T01:32:35.2230991+08:00</timeStamp>
+    <typeFullName>
+      <string>Script.StartAnimationAtRandomFrame</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7db3ed6d74cbf2b489cab5e1586bed7a</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/Editor/KinematicCharacterMotorEditor.cs</fileName>
+    <timeStamp>2022-06-08T01:04:35+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.KinematicCharacterMotorEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0d4351ab88853824b85a8f458928d825</guid>
+    <fileName>Assets/Plugins/KinematicCharacterController/Core/Editor/ReadOnlyPropertyDrawer.cs</fileName>
+    <timeStamp>2022-06-08T01:03:59+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.ReadOnlyPropertyDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a8bbccd6aee90b84cb8fcf5402b53438</guid>
+    <fileName>Assets/Plugins/Planar Reflections 4/Source Code/Editor/PlanarAPI.cs</fileName>
+    <timeStamp>2023-02-19T02:23:21.6672058+08:00</timeStamp>
+    <typeFullName>
+      <string>PlanarAPI</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a1736bab9076d2143b283893606cac6e</guid>
+    <fileName>Assets/Plugins/Planar Reflections 4/Source Code/Editor/PlanarReflectionCaster_Editor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:21.769454+08:00</timeStamp>
+    <typeFullName>
+      <string>PlanarReflections4.PlanarReflectionCaster_Editor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>26523091a6adc25458cfe16d6daf3982</guid>
+    <fileName>Assets/Plugins/Planar Reflections 4/Source Code/Editor/PlanarReflectionRenderer_Editor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:21.8008573+08:00</timeStamp>
+    <typeFullName>
+      <string>PlanarReflections4.PlanarReflectionRenderer_Editor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c266971950f6c8249832946861d54fa8</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/CameraToggleBeamVisibility.cs</fileName>
+    <timeStamp>2021-06-11T22:31:05+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.CameraToggleBeamVisibility</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>aa80be3114439164cb57d970b56bc816</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/CheckIfInsideBeam.cs</fileName>
+    <timeStamp>2021-06-11T22:31:01+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.CheckIfInsideBeam</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dd7339057fb22c84ea73609eb1efb890</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/FeaturesNotSupportedMessage.cs</fileName>
+    <timeStamp>2021-06-11T22:31:09+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.FeaturesNotSupportedMessage</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>73cef9fd683cb8c4fb218b6e5dc2f16e</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/FreeCameraController.cs</fileName>
+    <timeStamp>2021-06-11T22:30:54+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.FreeCameraController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>40a4b77a9b84c3040a81c0b7a629248a</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/LightGenerator.cs</fileName>
+    <timeStamp>2021-06-11T22:30:47+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.LightGenerator</string>
+      <string>VLB_Samples.LightGeneratorEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>031dc173b8912b246aaed3b7e88df54e</guid>
+    <fileName>Assets/Plugins/VolumetricLightBeam/Samples/Scripts/Rotater.cs</fileName>
+    <timeStamp>2021-06-11T22:30:36+08:00</timeStamp>
+    <typeFullName>
+      <string>VLB_Samples.Rotater</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>272a11163456c6647affb81b9e5f31a4</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogCreate.cs</fileName>
+    <timeStamp>2022-07-18T19:00:39+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5742a0fb70ce25846bc3269f9cdcf0cc</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogGlobalInspector.cs</fileName>
+    <timeStamp>2022-07-18T19:00:43+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9d154e6c392b13f4c9e2062cba0b24a4</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogHub.cs</fileName>
+    <timeStamp>2022-07-18T19:00:50+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4fd498d1bc844c447b1f09b2d746282e</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogOverrideInspector.cs</fileName>
+    <timeStamp>2022-07-18T19:00:42+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fefeae948a42a964faad5fe6c75c59de</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogShaderGUI.cs</fileName>
+    <timeStamp>2022-07-18T19:01:05+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fcdedd08e41e034790d1fa393bcb67e</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Editor/HeightFogWindows.cs</fileName>
+    <timeStamp>2022-07-18T19:00:44+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5472a508dc786f44eac5926a86dba7ff</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Runtime/HeightFogEnums.cs</fileName>
+    <timeStamp>2022-07-18T19:00:43+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d8023d2ae1fcb2948a39527720c2087b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Runtime/HeightFogGlobal.cs</fileName>
+    <timeStamp>2022-07-18T19:00:58+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ac1c26670b7bd6a47ac695141473ab42</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Atmospheric Height Fog/Core/Runtime/HeightFogOverride.cs</fileName>
+    <timeStamp>2022-07-18T19:00:53+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e0cf8ff3bbc97374f88272f686fb80e5</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/Constants/Constants.cs</fileName>
+    <timeStamp>2022-07-18T19:01:00+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90057ce590a8bd148ab59e018f35d9cb</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/SettingsUtils/LoadSettingsData.cs</fileName>
+    <timeStamp>2022-07-18T19:00:48+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7afe5a6ac49829c408df7e64761e822d</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/SettingsUtils/SaveSettingsData.cs</fileName>
+    <timeStamp>2022-07-18T19:00:46+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1525d4228f26951498e86e425363f3f0</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorBanner.cs</fileName>
+    <timeStamp>2022-07-18T19:00:38+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>87b94a9c1333f074e8c24cd5a2fe1d73</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorCategory.cs</fileName>
+    <timeStamp>2022-07-18T19:00:47+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd0ddca94871d9a4586a143a83184806</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowBanner.cs</fileName>
+    <timeStamp>2022-07-18T19:00:59+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aac99d6d81f90e54cabd822770c11875</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowCategory.cs</fileName>
+    <timeStamp>2022-07-18T19:00:52+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a832b9f47ccef214e81c89efe6bf31dd</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledBannerDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:52+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b1d35dbbb9b6c214aa892d7b240de3df</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledButtonDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:54+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fb59d41716ab6114cb7cf03a5695083b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledCategoryDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:04+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c3935e6d6b91844d8053d3fa7faff1b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledEnumDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:46+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea3f7407f69f900468d4b60de570e49d</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledIndentDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:01+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>80229de18cd73624b8181a9db49a304f</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledInteractiveDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:46+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b351b243374f2d948a9e9943abe174bf</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledLayersDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:55+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3ceb6b7bf0fb6a8449797ccd85dea11c</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMaskDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:41+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2734a300c1fbfb8499fe8a71e9b109e7</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMessageDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:39+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5681c6e5862ae545ba9b00a5b813250</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledRangeOptionsDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:51+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>db0457065a494f34aa3b619f240d8bda</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledSpaceDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:59+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aeec2ac650d2d8f40aa3b9e0cb807db5</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTextDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:53+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c8daad1bc4051084ca6204e12dc0890d</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTexturePreviewDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:56+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>864d8c89c5d2ef240b0c51f15c5211e2</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledBannerDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:47+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b40d7a397aa055b46a1651ee9f9bdd03</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledButtonDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:55+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b5715cd99e4a2e4c91d69653d31dad9</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledCategoryDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:38+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f13faeb510c3cb54ba5d051ecaad26e3</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledDiffusionMaterialDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:03+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b1d76466e8080c147b2fa9e3b42e8850</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEmissiveIntensityDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:54+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5dbd5cf6c68f1d4ebd1369f8795ee3a</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEnumDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:51+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae4fb3d8081065c47860724ea515c97c</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledIndentDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:53+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7cc33d297d20daa40a9b09fbb8e59502</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledInteractiveDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:46+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c837d89f6f4cd574595a810c5fcc15f8</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledLayersDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:56+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd2d7ee86763017438ae71ea6a9800f6</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMaskDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:05+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d01ce91280120de49b931b40f9e16f6b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMessageDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:57+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4bc1ff93a8a28e42954d7469249a7a0</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledOptionsSliderDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:58+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>364f1df7c922ba84fa6fc52fd3900332</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledRemapSliderDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:40+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f2f57e67392e5b41af1a4cecc3a6c04</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledSpaceDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:39+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e137daebc2f7e0c4aa0ee5c5b140e8fd</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:00+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ab83955dedb2aed428447d90cf62c81b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:53+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>561b67406eee81948baf13ee752ae801</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureSingleLineDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:43+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d5699c954b5c9184199293b4ede31d57</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledToggleDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:00:58+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ebb397dcd33e7cb48a6c3c5b9d928c05</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVectorDrawer.cs</fileName>
+    <timeStamp>2022-07-18T19:01:02+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>29c1ac24df072a744a4bdc6a209772bf</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMono/StyledMonoBehaviourEditor.cs</fileName>
+    <timeStamp>2022-07-18T19:00:39+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a0e1a0aaab33f341b20d7d940fe0a06</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Editor/StyledMono/StyledScriptableObjectEditor.cs</fileName>
+    <timeStamp>2022-07-18T19:00:45+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93308045fbb3c5e42ba5ccb66d848632</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/SettingsUtils/SettingsData.cs</fileName>
+    <timeStamp>2022-07-18T19:00:49+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e3a24ffac8f074c4f8765c1844bb5e90</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledGizmos/StyledLabelGizmo.cs</fileName>
+    <timeStamp>2022-07-18T19:01:00+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0fb089d68a8e4634390e299256c8eec7</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledBanner.cs</fileName>
+    <timeStamp>2022-07-18T19:00:37+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c167590d9d480e438111f555c3a9d09</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledButton.cs</fileName>
+    <timeStamp>2022-07-18T19:00:46+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6dfd994aa3f6b3944a0bd6effc2b3102</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledCategory.cs</fileName>
+    <timeStamp>2022-07-18T19:00:45+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c65df615eedc39d41bcf5191b9429056</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledEnum.cs</fileName>
+    <timeStamp>2022-07-18T19:00:56+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd0e43229939f8b45bd79345e699dfcd</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledIndent.cs</fileName>
+    <timeStamp>2022-07-18T19:01:04+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>388415cfa9bb69041a8281bc567acec5</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledInteractive.cs</fileName>
+    <timeStamp>2022-07-18T19:00:40+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>846c011559e38824090c713c729cfec1</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledLayers.cs</fileName>
+    <timeStamp>2022-07-18T19:00:47+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e4362c0144e8a5b45be782723d2c956f</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMask.cs</fileName>
+    <timeStamp>2022-07-18T19:01:01+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ab1d3117b9da8d7429e5ac70bd016772</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMessage.cs</fileName>
+    <timeStamp>2022-07-18T19:00:52+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>896f8a6be3053ff4a8f322a960986af1</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledRangeOptions.cs</fileName>
+    <timeStamp>2022-07-18T19:00:48+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e11186e2ccd8bf44d9d8699902268c99</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledSpace.cs</fileName>
+    <timeStamp>2022-07-18T19:01:00+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df9ee7b5ab129dd4991f424a8d93430b</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledText.cs</fileName>
+    <timeStamp>2022-07-18T19:01:00+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b33fc29a1077eff40880c4d54b57136c</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledTexturePreview.cs</fileName>
+    <timeStamp>2022-07-18T19:00:55+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0003a5bea05764747b05fa096a075848</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledMonoBehaviour.cs</fileName>
+    <timeStamp>2022-07-18T19:00:36+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>528a63c4c58b58a4ca3927eec830c596</guid>
+    <fileName>Assets/Plugins/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledScriptableObject.cs</fileName>
+    <timeStamp>2022-07-18T19:00:42+08:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c8a023c33ad96a4185314a66bbfe4ed</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/CustomURPPostProcessing/Editor/CustomPostProcessSettingsEditor.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.6473966+08:00</timeStamp>
+    <typeFullName>
+      <string>UnityEditor.Rendering.Universal.PostProcessing.CustomPostProcessSettingsEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e4641969ffd302f4ba2bcf2d83f19cb5</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/CustomURPPostProcessing/Runtime/RenderFeatures/CinematicURPPostProcessing_PRISM.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.6938993+08:00</timeStamp>
+    <typeFullName>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CinematicURPPostProcessing_PRISM</string>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CinematicURPPostProcessing_PRISM+CustomPostProcessSettings</string>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CustomPostProcessRenderPass</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ca15106418d83954dbd218a636918f1e</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/CustomURPPostProcessing/Runtime/RenderFeatures/CustomPostProcessRenderer.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.7113633+08:00</timeStamp>
+    <typeFullName>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CustomPostProcessInjectionPoint</string>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CustomPostProcessRenderer</string>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.CustomPostProcessAttribute</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>15dde40888ae0c1458dbe44c3f3a9f50</guid>
+    <fileName>Assets/Plugins/Cinematic URP Post-Processing/Scripts/CustomURPPostProcessing/Runtime/RenderFeatures/SceneTransparentDepth.cs</fileName>
+    <timeStamp>2023-02-19T02:23:15.7291244+08:00</timeStamp>
+    <typeFullName>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.SceneTransparentDepth</string>
+      <string>UnityEngine.Rendering.Universal.PostProcessing.TransparentDepthPass</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b4ea825e5eed07c4ab0439cba26168df</guid>
+    <fileName>Assets/Scripts/FogTransitionCity.cs</fileName>
+    <timeStamp>2023-02-09T05:16:38.8519576+08:00</timeStamp>
+    <typeFullName>
+      <string>FogTransitionCity</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e55703338ef2c31409bc434a0e1477d5</guid>
+    <fileName>Assets/Scripts/MainCamera.cs</fileName>
+    <timeStamp>2023-02-19T02:23:28.3334158+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.Examples.MainCamera</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b77e6e43b77edc44bbd51572e5751677</guid>
+    <fileName>Assets/Scripts/SpriteBillboard.cs</fileName>
+    <timeStamp>2023-02-01T04:55:14.76092+08:00</timeStamp>
+    <typeFullName>
+      <string>SpriteBillboard</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2f6feda4cb689304198efd8706d9f27f</guid>
+    <fileName>Assets/Scripts/SpriteShadows.cs</fileName>
+    <timeStamp>2023-01-31T19:16:26.5359656+08:00</timeStamp>
+    <typeFullName>
+      <string>SpriteShadows</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d8394b0c38795d54180d6b4705efd19b</guid>
+    <fileName>Assets/Scripts/Player/PlayerCharacterController.cs</fileName>
+    <timeStamp>2023-02-19T02:23:28.3413889+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup.PlayerCharacterInputs</string>
+      <string>KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup.PlayerCharacterController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1465eb3eb3c4f484896fbaa24d30cf3d</guid>
+    <fileName>Assets/Scripts/Player/PlayerInputHandler.cs</fileName>
+    <timeStamp>2023-01-31T04:40:37.6276504+08:00</timeStamp>
+    <typeFullName>
+      <string>KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup.PlayerInputHandler</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>

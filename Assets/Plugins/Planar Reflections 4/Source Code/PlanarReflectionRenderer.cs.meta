@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: dde72cd477072284786978889ffce393
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - internalPostFXResources: {fileID: 11400000, guid: 4be3c01c56742ae44be75ba170c06426,
+      type: 2}
+  - defaultReflectorMesh: {fileID: 4300002, guid: 7895f1f943551db4e9784958a7e88a58,
+      type: 3}
+  - defaultReflectorMaterial: {fileID: 2100000, guid: fbfc4efe23a9b0046a787d829353352b,
+      type: 2}
+  - externalReflectionTex: {instanceID: 0}
+  - externalReflectionDepth: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
