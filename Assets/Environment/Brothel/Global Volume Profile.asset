@@ -339,7 +339,7 @@ MonoBehaviour:
     m_Value: {r: 0.5, g: 0.5, b: 1, a: 0}
   anamorphicFlaresIntensity:
     m_OverrideState: 1
-    m_Value: 0.13
+    m_Value: 0.03
   anamorphicFlaresThreshold:
     m_OverrideState: 1
     m_Value: 3.39
