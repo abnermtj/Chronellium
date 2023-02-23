@@ -7,7 +7,7 @@ public class Collection
     private int capacity;
     private int scannedCapacity;
     public List<Countable<Item>> items;
-    private Dictionary<Item, Countable<Item>> itemsTable;
+    public Dictionary<Item, Countable<Item>> itemsTable;
     public Action onItemChanged;
     public Action<Item> onNewItemAdded;
     public Func<Collection, Item, int, bool> assertAddRule;
@@ -66,6 +66,11 @@ public class Collection
         return items.Count;
     }
 
+    public void RemoveItem(Item item) {
+        items.Remove(itemsTable[item]);
+        itemsTable.Remove(item);
+    }
+
     public void UseItem(Item item, int quantity = 1, bool isUsedFromInventory = true) {
         if (
             itemsTable.ContainsKey(item) 
@@ -78,8 +83,7 @@ public class Collection
 
             bool noneLeft = item.isConsumable ? itemsTable[item].RemoveStock(quantity) : false;
             if (noneLeft) {
-                items.Remove(itemsTable[item]);
-                itemsTable.Remove(item);
+                RemoveItem(item);
             }
 
             onItemChanged?.Invoke();

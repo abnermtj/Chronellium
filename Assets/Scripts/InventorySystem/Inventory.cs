@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Inventory {
     public static Inventory instance;
@@ -13,7 +14,19 @@ public class Inventory {
 
     // Used to determine inventory state after travelling to the past, normal collection reverts, scanned collection persists
     public static Inventory Merge(Inventory pastInventory, Inventory preLeapInventory) {
-        return new Inventory(pastInventory.NormalCollection.GetCopy(), preLeapInventory.ScannedCollection.GetCopy());
+        Collection normalCollection = pastInventory.NormalCollection.GetCopy();
+        Collection scannedCollection =  preLeapInventory.ScannedCollection.GetCopy();
+        List<Item> duplicatesInScannedCollection = new List<Item>();
+        foreach (KeyValuePair<Item, Countable<Item>> item in scannedCollection.itemsTable) {
+            if (normalCollection.Contains(item.Key)) {
+                duplicatesInScannedCollection.Add(item.Key);
+            }
+        }
+
+        foreach (Item duplicateItem in duplicatesInScannedCollection) {
+            scannedCollection.RemoveItem(duplicateItem);
+        }
+        return new Inventory(normalCollection, scannedCollection);
     }
 
     public static void AssignNewInventory(Inventory newInventory) {
