@@ -6,6 +6,7 @@ public class Inventory {
     public Action<Item> onItemInspected;
     public Collection NormalCollection { get; private set; }
     public Collection ScannedCollection { get; private set; }
+    private int defaultScannedCollectionCapacity = 4;
     private Func<Collection, Item, int, bool> normalAddRule = (collection, item, quantity) => true;
     // Each slot in scanned collection can only contain one item of stock count 1
     private Func<Collection, Item, int, bool> scanAddRule = (collection, item, quantity) => !collection.Contains(item) && quantity == 1;
@@ -22,7 +23,7 @@ public class Inventory {
 
     public Inventory(Collection normalCollection = null, Collection scannedCollection = null) {
         NormalCollection = normalCollection ?? new Collection(normalAddRule);
-        ScannedCollection = scannedCollection ?? new Collection(scanAddRule);
+        ScannedCollection = scannedCollection ?? new Collection(scanAddRule, null, defaultScannedCollectionCapacity);
     }
 
     public void AddTo(bool isNormal, Item item, int quantity = 1) {
