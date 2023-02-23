@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf9bad4f8b6f46f089422996d797b40, type: 3}
+  m_Name: AbortionPill
+  m_EditorClassIdentifier: 
+  itemName: Willow
+  description: An abortion drug when consumed excessively can result in headache
+    or even temporary loss of consiousness.
+  icon: {fileID: 21300000, guid: d7c5641ef30b85446a1a35fd88f3ec7b, type: 3}
+  itemImage: {fileID: 21300000, guid: d7c5641ef30b85446a1a35fd88f3ec7b, type: 3}
+  canUseFromInventory: 0
+  isConsumable: 1
+  itemUsedEvent: 2

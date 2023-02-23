@@ -6,13 +6,14 @@ using UnityEngine.Events;
 public class EventManager
 {
     public enum Event {
-        Open_UI,
-        Close_UI,
         SCENE_START,
-        CHOICE_ONE,
-        CHOICE_TWO,
-        CHOICE_THREE,
-        CHOICE_FOUR
+
+        INVENTORY_CHANGED,
+
+        // NOTE: Item Usage Event, follow "USE" naming convention for easy reference when creating scriptable object
+        USE_ENERGY_DRINK,
+        USE_DRUG,
+        USE_FILE
     }
 
     private static Dictionary<Event, UnityEvent<object>> eventTable = new Dictionary<Event, UnityEvent<object>>();
