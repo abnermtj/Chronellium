@@ -19,7 +19,10 @@ public class Item : ScriptableObject
     // the item in the inventory.
     public virtual void Use() {
         // Non consumables will be inspected instead via zoom box
-        if (!isConsumable) Inventory.instance.onItemInspected?.Invoke(this);
+        if (!isConsumable) {
+            Inventory.instance.onItemInspected?.Invoke(this);
+            Debug.Log($"Should show {itemName} in zoombox");
+        }
         // InputManager.itemUseButtonActivated = true;
         EventManager.InvokeEvent(itemUsedEvent);
     }

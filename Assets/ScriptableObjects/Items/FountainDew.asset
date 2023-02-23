@@ -18,4 +18,4 @@ MonoBehaviour:
   itemImage: {fileID: 21300000, guid: 0be49e8f155e8f544b8523c36bbbb91b, type: 3}
   canUseFromInventory: 1
   isConsumable: 1
-  itemUsedEvent: 1
+  itemUsedEvent: 2

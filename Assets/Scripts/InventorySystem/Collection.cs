@@ -40,14 +40,12 @@ public class Collection
         // Existing item.
         if (itemsTable.ContainsKey(item)) {
             itemsTable[item].AddToStock(quantity);
-            Debug.Log($"{item.itemName} new count {itemsTable[item].Stock}");
         } else {
         // New item
             Countable<Item> itemStack = new Countable<Item>(item, quantity);
             itemsTable.Add(item, itemStack);
             items.Add(itemStack);
             onNewItemAdded?.Invoke(item);
-            Debug.Log($"{item.itemName} added to collection");
         }
 
         onItemChanged?.Invoke();
@@ -87,8 +85,6 @@ public class Collection
             onItemChanged?.Invoke();
             return;
         }
-        // Should not occur.
-        Debug.Log("Inventory does not contain item.");
     }
 
     // NOTE: These GetCopy() are required to support snapshot function required to record an immutable state of inventory

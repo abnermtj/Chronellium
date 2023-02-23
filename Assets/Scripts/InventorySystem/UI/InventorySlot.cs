@@ -17,7 +17,6 @@ public class InventorySlot : MonoBehaviour
         icon.preserveAspect = true;
         itemName.text = newItemStack.Data.itemName;
         amount.text = newItemStack.Stock.ToString();
-        Debug.Log($"{newItemStack.Data.itemName} {newItemStack.Stock} at slot stage");
 
         icon.enabled = true;
         itemName.enabled = true;
@@ -40,6 +39,7 @@ public class InventorySlot : MonoBehaviour
 
     public void UseItem() {
         if (itemStack != null) {
+            Debug.Log($"Using {itemStack.Data.itemName}");
             referencedCollection.UseItem(itemStack.Data);
         }
     }

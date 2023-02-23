@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using System;
 
 // Must be placed under a singleton parent.
 public class InventoryUI : MonoBehaviour
@@ -13,9 +14,11 @@ public class InventoryUI : MonoBehaviour
     private Collection referencedCollection;
     InventorySlot[] slots;
     public GameObject firstSlot;
+    private Stack<Action> pageRecyclers;
 
     void Awake() {
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+        pageRecyclers = new Stack<Action>();
     }
 
     public void Init(object input = null) {
@@ -25,7 +28,6 @@ public class InventoryUI : MonoBehaviour
 
         referencedCollection = isNormal ? Inventory.instance.NormalCollection : Inventory.instance.ScannedCollection;
         referencedCollection.onNewItemAdded += ShowItemHint;
-        Debug.Log("Init references to new inventory");
 
         for (int i = 0; i < referencedCollection.Size(); i++) {
             slots[i].SetItem(referencedCollection.items[i]);
@@ -34,6 +36,8 @@ public class InventoryUI : MonoBehaviour
         foreach (InventorySlot slot in slots) {
             slot.referencedCollection = referencedCollection;
         }
+
+        Hide();
     }
 
     // Start is called before the first frame update
@@ -51,9 +55,10 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && !DialogueManager.instance.inDialogue) {
             if (!panel.activeInHierarchy) {
                 Display();
-            } else {
-                Hide();
+                pageRecyclers.Push(Hide);
             }
+        } else if (Input.GetKeyDown(KeyCode.Escape) && pageRecyclers.Count > 0) {
+            pageRecyclers.Pop().Invoke();
         }
     }
 
@@ -62,7 +67,6 @@ public class InventoryUI : MonoBehaviour
         for (int i = 0; i < slots.Length; i++) {
             if (i < referencedCollection.Size()) {
                 slots[i].SetItem(referencedCollection.items[i]);
-                Debug.Log($"{referencedCollection.items[i].Data.itemName} {referencedCollection.items[i].Stock} at UI stage");
             } else {
                 slots[i].ClearSlot();
             }
@@ -87,6 +91,7 @@ public class InventoryUI : MonoBehaviour
     }
 
     void Hide() {
+        Debug.Log("Closing inventory UI");
         referencedCollection.onItemChanged -= UpdateUI;
         Inventory.instance.onItemInspected -= ZoomToShowItem;
         panel.SetActive(false);
@@ -95,8 +100,9 @@ public class InventoryUI : MonoBehaviour
     }
 
     public void ZoomToShowItem(Item item) {
+        pageRecyclers.Push(zoomBox.Hide);
         zoomBox.Show(item);
-    }   
+    }
 
     public void ShowItemHint(Item item) {
         itemHint.Show(item);

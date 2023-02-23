@@ -13,7 +13,6 @@ public class Countable<U>
 
     public void AddToStock(int quantity) {
         this.Stock += quantity;
-        Debug.Log($"New stock {Stock}");
     }
 
     public bool RemoveStock(int quantity) {

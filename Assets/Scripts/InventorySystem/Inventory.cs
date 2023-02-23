@@ -7,7 +7,7 @@ public class Inventory {
     public Collection NormalCollection { get; private set; }
     public Collection ScannedCollection { get; private set; }
     private Func<Collection, Item, int, bool> normalAddRule = (collection, item, quantity) => true;
-    // Each slot in scanned collection can only contain one item of stock 1
+    // Each slot in scanned collection can only contain one item of stock count 1
     private Func<Collection, Item, int, bool> scanAddRule = (collection, item, quantity) => !collection.Contains(item) && quantity == 1;
 
     // Used to determine inventory state after travelling to the past, normal collection reverts, scanned collection persists

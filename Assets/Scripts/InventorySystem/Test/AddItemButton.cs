@@ -8,7 +8,6 @@ public class AddItemButton : MonoBehaviour
     public int quantity;
 
     void Start() {
-        Debug.Log($"Inventory instance {Inventory.instance == null}");
         if (Inventory.instance == null) {
             Inventory.AssignNewInventory(new Inventory());
         }
