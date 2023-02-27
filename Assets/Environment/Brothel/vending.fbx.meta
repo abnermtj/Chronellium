@@ -3,7 +3,32 @@ guid: 35a2ddf4e0ddf4246a383bddd8340466
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: fc88de425032ec14092b748ace0dead7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Machine
+    second: {fileID: 2100000, guid: c32e3953e63fb0b47bf744481cdbd6f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plates
+    second: {fileID: 2100000, guid: 61e8f55397015214e8cd05ccfb4f0f48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster
+    second: {fileID: 2100000, guid: b5a3ddca3107b814482cfc9b2ba1b210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sweets
+    second: {fileID: 2100000, guid: 9abff6b91c5663941be2fa5c3d5e80d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
