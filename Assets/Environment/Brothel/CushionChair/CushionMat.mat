@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: wire_141007058
+  m_Name: CushionMat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -108,8 +108,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.3301887, g: 0.0140174385, b: 0.19318113, a: 1}
-    - _Color: {r: 0.33018863, g: 0.0140174385, b: 0.1931811, a: 1}
+    - _BaseColor: {r: 0.14150941, g: 0.09545211, b: 0.12135934, a: 1}
+    - _Color: {r: 0.14150938, g: 0.09545208, b: 0.12135931, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
