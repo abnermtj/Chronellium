@@ -119,7 +119,6 @@ namespace KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
 
                     var goalPosition = walkPath.EvaluatePosition(walkPath.FindClosestPoint(transform.position, 0, -1, 10));
                     var velocityToWalkPath = (goalPosition - transform.position);
-                    Debug.Log(velocityToWalkPath);
                     if (velocityToWalkPath.magnitude > .1)
                     {
                         targetMovementVelocity += velocityToWalkPath * 2;

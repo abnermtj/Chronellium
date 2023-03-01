@@ -15,6 +15,5 @@ public class SpriteBillboard : MonoBehaviour
     private void Update()
     {
         transform.rotation = Quaternion.Euler(Camera.main.transform.eulerAngles.x, Camera.main.transform.rotation.eulerAngles.y, 0f);
-        Debug.Log(Camera.main.transform.rotation);
     }
 }
