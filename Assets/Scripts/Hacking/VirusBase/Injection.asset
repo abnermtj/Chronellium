@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7f1e1759a394724824e360e1c49765, type: 3}
+  m_Name: Injection
+  m_EditorClassIdentifier: 
+  type: 4
+  visual: {fileID: 8028326732052433890, guid: cf824d63f63a2472a96024a23668dd8e, type: 3}
+  color: {r: 0.66074294, g: 0, b: 0.98039216, a: 1}
