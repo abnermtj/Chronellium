@@ -26,6 +26,8 @@ public class InventoryUI : MonoBehaviour
             slot.ClearSlot();
         }
 
+        Debug.Log("inventory assigned");
+
         referencedCollection = isNormal ? Inventory.instance.NormalCollection : Inventory.instance.ScannedCollection;
         referencedCollection.onNewItemAdded += ShowItemHint;
 
@@ -47,6 +49,7 @@ public class InventoryUI : MonoBehaviour
 
     void OnDisable() {
         EventManager.StopListening(EventManager.Event.INVENTORY_CHANGED, Init);
+        if (referencedCollection == null) return;
         referencedCollection.onNewItemAdded -= ShowItemHint;
     }
 
@@ -74,6 +77,10 @@ public class InventoryUI : MonoBehaviour
     }
 
     void Display() {
+        // NOTE: Defensive coding in case when inventory is initialized the callback Init has not
+        // registered with EventManager and thus referenced collection is not assigned
+        if (referencedCollection == null) Init();
+
         referencedCollection.onItemChanged += UpdateUI;
         Inventory.instance.onItemInspected += ZoomToShowItem;
         // The referencedCollection is closed every time a special item is used.

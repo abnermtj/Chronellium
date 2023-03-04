@@ -30,6 +30,7 @@ public class Inventory {
     }
 
     public static void AssignNewInventory(Inventory newInventory) {
+        Debug.Log("New inventory assigned");
         instance = newInventory;
         EventManager.InvokeEvent(EventManager.Event.INVENTORY_CHANGED);
     }

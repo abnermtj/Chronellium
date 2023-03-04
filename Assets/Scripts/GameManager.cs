@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        // TESTCODE
+        Inventory gameInventory = new Inventory();
+        Inventory.AssignNewInventory(gameInventory);
        
         DontDestroyOnLoad(gameObject);
         instance = this;
