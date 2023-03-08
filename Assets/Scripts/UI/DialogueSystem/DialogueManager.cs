@@ -7,19 +7,21 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
 
-    private void Awake() 
+    private void Awake()
     {
-        if (DialogueManager.instance != null) {
+        if (DialogueManager.instance != null)
+        {
             Destroy(gameObject);
             return;
         }
 
         instance = this;
     }
-    
+
     public GameObject dialogBox;
     public Text speakerName, dialogue;
     public Image leftSprite, rightSprite;
+    public DialogueAudioManager dialogueAudioManager;
     private int currIndex;
     private Conversation currentConvo;
     public bool inDialogue = false;
@@ -40,38 +42,47 @@ public class DialogueManager : MonoBehaviour
     {
         dialogBox.SetActive(true);
         UiStatus.OpenUI();
-        
+
         currIndex = 0;
         currentConvo = convo;
         speakerName.text = "";
         dialogue.text = "";
-        if (convo.startingLeftSpeaker.speakerSprite != null) {
+        if (convo.startingLeftSpeaker.speakerSprite != null)
+        {
             leftSprite.sprite = convo.startingLeftSpeaker.speakerSprite;
         }
-        if (convo.startingRightSpeaker.speakerSprite != null) {
+        if (convo.startingRightSpeaker.speakerSprite != null)
+        {
             rightSprite.sprite = convo.startingRightSpeaker.speakerSprite;
         }
 
-        ReadNext();    
-        inDialogue = true;  
+        ReadNext();
+        inDialogue = true;
     }
 
-    public void ReadNext() {
-        if (currIndex == currentConvo.allLines.Length) {    
-            EndDialogue();      
+    public void ReadNext()
+    {
+        if (currIndex == currentConvo.allLines.Length)
+        {
+            EndDialogue();
         }
-        else {
-            if (dialogueLineCoroutine != null) {
+        else
+        {
+            if (dialogueLineCoroutine != null)
+            {
                 StopCoroutine(dialogueLineCoroutine);
             }
 
-            dialogueLineCoroutine = StartCoroutine(DisplayLine(currentConvo.allLines[currIndex].dialogue));
+            dialogueLineCoroutine = StartCoroutine(DisplayLine(currentConvo.allLines[currIndex].dialogue, currentConvo.allLines[currIndex].speaker.speakerName));
 
-            if (currentConvo.allLines[currIndex].isLeft) {
+            if (currentConvo.allLines[currIndex].isLeft)
+            {
                 leftSprite.color = new Color32(255, 255, 255, 255);
                 leftSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
                 rightSprite.color = new Color32(110, 110, 110, 255);
-            } else {
+            }
+            else
+            {
                 rightSprite.color = new Color32(255, 255, 255, 255);
                 rightSprite.sprite = currentConvo.allLines[currIndex].speaker.speakerSprite;
                 leftSprite.color = new Color32(110, 110, 110, 255);
@@ -82,11 +93,20 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private IEnumerator DisplayLine(string line) {
+    private IEnumerator DisplayLine(string line, string speakerName)
+    {
         dialogue.text = "";
 
-        foreach (char letter in line.ToCharArray()) {
+        // for Dialogue Audio use
+        int characterCount = 0;
+        dialogueAudioManager.SetCurrentAudioInfo(speakerName);
+
+        foreach (char letter in line.ToCharArray())
+        {
             yield return new WaitForSeconds(typingSpeed);
+
+            dialogueAudioManager.PlayDialogueSound(characterCount, letter);
+            characterCount++;
             dialogue.text += letter;
         }
     }
@@ -95,12 +115,15 @@ public class DialogueManager : MonoBehaviour
     // otherwise, OpenUI() in ChoiceManager might be called before CloseUI()
     // in DialogueManager, which leads to isOpen in UiStatus set to false
     // even when the UI is still oopen
-    public void EndDialogue() {
+    public void EndDialogue()
+    {
         inDialogue = false;
-        if (dialogueLineCoroutine != null) {
+        if (dialogueLineCoroutine != null)
+        {
             StopCoroutine(dialogueLineCoroutine);
         }
-        if (!currentConvo.endWithChoice) {
+        if (!currentConvo.endWithChoice)
+        {
             UiStatus.CloseUI();
             dialogBox.SetActive(false);
         }
