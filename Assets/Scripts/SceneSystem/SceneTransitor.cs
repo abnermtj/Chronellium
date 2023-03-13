@@ -19,6 +19,7 @@ public class SceneTransitor : MonoBehaviour
     public SceneAsset LoadingScene = null;          // Default is "DefaultLoading"
     public bool UseLoading = false;
     public Activation Trigger;
+    public bool AdditiveAddToCurrentScene = false;
 
 
     private void OnTriggerEnter(Collider collision)
@@ -57,6 +58,12 @@ public class SceneTransitor : MonoBehaviour
 
     private void LoadNextScene()
     {
+        // Check if using additive scene loading
+        if (AdditiveAddToCurrentScene)
+        {
+            SceneLoader.EnableAdditive();
+        }
+
         if (UseLoading)
         {
             if (LoadingScene != null)
