@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 2c6c1579a55b54eef9a10f5295120889
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Brutel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7703dff6110f1472c8e0978b9d80b45e, type: 3}
+  - {fileID: 12800000, guid: 754ed3f84fb054394bc48e57906b9bfe, type: 3}
+  - {fileID: 12800000, guid: 39f7227ccb5484e80bd6d446c2827766, type: 3}
+  - {fileID: 12800000, guid: 10367615da7754fda8c7d472e613c901, type: 3}
+  - {fileID: 12800000, guid: f6666431ccd8a4c28b0084710938a753, type: 3}
+  - {fileID: 12800000, guid: d2d020a9cdfd942a4a799008308b4e9d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

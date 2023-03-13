@@ -8,14 +8,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (GameManager.instance != null)
-        {
+        if (GameManager.instance != null) {
             Destroy(gameObject);
             return;
         }
+        // TESTCODE
+        Inventory gameInventory = new Inventory();
+        Inventory.AssignNewInventory(gameInventory);
        
         DontDestroyOnLoad(gameObject);
-
         instance = this;
     }
 }

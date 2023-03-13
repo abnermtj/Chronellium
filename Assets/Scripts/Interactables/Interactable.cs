@@ -30,6 +30,7 @@ public abstract class Interactable : MonoBehaviour
  
     private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("Trigger entered");
         if (IsPlayer(collision.gameObject)) {
             playerInRange = true;
         }
