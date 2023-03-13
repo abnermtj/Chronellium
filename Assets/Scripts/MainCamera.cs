@@ -12,6 +12,7 @@ namespace KinematicCharacterController.Examples
 
         public CinemachinePath walkPath;
         public GameObject player;
+        public bool lookAtPlayer;
 
         [Header("Framing")]
         public Camera Camera;
@@ -101,11 +102,13 @@ namespace KinematicCharacterController.Examples
             {
                 // Match the walk path's progress
                 float curWalkPoint = walkPath.FindClosestPoint(player.transform.position, 0, -1, 10);
-                Debug.Log(curWalkPoint);
 
                 // Apply position
                 Transform.position = cameraPath.EvaluatePosition(curWalkPoint);
-                Transform.LookAt(FollowTransform);
+                if (lookAtPlayer)
+                {
+                    Transform.LookAt(FollowTransform);
+                }
             }
             else if (FollowTransform)
             {

@@ -338,8 +338,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 1, a: 0}
   anamorphicFlaresIntensity:
-    m_OverrideState: 1
-    m_Value: 0.13
+    m_OverrideState: 0
+    m_Value: 0.03
   anamorphicFlaresThreshold:
     m_OverrideState: 1
     m_Value: 3.39
@@ -496,7 +496,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 3
   chromaticAberrationIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   chromaticAberrationShift:
     m_OverrideState: 0
@@ -826,6 +826,29 @@ MonoBehaviour:
   - {fileID: 7192140896803468082}
   - {fileID: 2884636632730085788}
   - {fileID: -5238614505314667668}
+  - {fileID: 139264822788281421}
+--- !u!114 &139264822788281421
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gamma:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.13686909}
 --- !u!114 &2884636632730085788
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -863,10 +886,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.595
+    m_Value: 0.603
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.227
+    m_Value: 0.38
   rounded:
     m_OverrideState: 0
     m_Value: 0
