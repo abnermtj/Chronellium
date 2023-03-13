@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -358,6 +358,12 @@ MonoBehaviour:
   choiceText1: Introduce yourself
   choiceText2: Ask for her help
   choiceText3: Pass her the message
+--- !u!224 &617560083 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8980083014740985304, guid: 84f7a3ee8d61f43128503612a4b1f81b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1733895337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &694420880
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +604,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 551229312640529246, guid: 84f7a3ee8d61f43128503612a4b1f81b,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 551229312640529246, guid: 84f7a3ee8d61f43128503612a4b1f81b,
+        type: 3}
+      propertyPath: dialogueAudioManager
+      value: 
+      objectReference: {fileID: 1843119911}
     - target: {fileID: 1160407569407465096, guid: 84f7a3ee8d61f43128503612a4b1f81b,
         type: 3}
       propertyPath: m_Name
@@ -658,6 +674,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6473272861578100170, guid: 84f7a3ee8d61f43128503612a4b1f81b,
+        type: 3}
+      propertyPath: m_ScaleFactor
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980083014740985286, guid: 84f7a3ee8d61f43128503612a4b1f81b,
+        type: 3}
+      propertyPath: m_ScaleFactor
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f7a3ee8d61f43128503612a4b1f81b, type: 3}
 --- !u!1 &1744259339
@@ -704,3 +730,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1843119909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843119910}
+  - component: {fileID: 1843119911}
+  m_Layer: 0
+  m_Name: DialogueAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843119910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843119909}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1111.9349, y: -487.98, z: -19.435001}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 617560083}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843119911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843119909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc32eb6f43defd448bdf50632438b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultAudioInfo: {fileID: 11400000, guid: 2ee07bef2c36ac94eb2488c875a91be6, type: 2}
+  audioInfos:
+  - {fileID: 11400000, guid: 2afc51f09045861479a824c12e0540db, type: 2}
+  makePredictable: 1
+  volume: 0.133
